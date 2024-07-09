@@ -55,23 +55,6 @@ PrintMoveType:
 
 	ld b, a
 
-;PrintMoveCategory:
-;; Print the type of move b at hl.
-;
-;	push hl
-;	ld a, b
-;	dec a
-;	ld bc, MOVE_LENGTH
-;	ld hl, Moves
-;	call AddNTimes
-;	ld de, wStringBuffer1
-;	ld a, BANK(Moves)
-;	call FarCopyBytes
-;	ld a, [wStringBuffer1 + MOVE_CATEGORY]
-;	pop hl
-;
-;	ld b, a
-
 PrintType:
 ; Print type b at hl.
 
@@ -90,6 +73,7 @@ PrintType:
 
 	jp PlaceString
 
+; Usef in Conversion and Conversion2
 GetTypeName:
 ; Copy the name of type [wNamedObjectIndex] to wStringBuffer1.
 

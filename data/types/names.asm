@@ -22,6 +22,14 @@ TypeNames:
 	dw UnknownType
 	assert_table_length NUM_TYPES
 
+CategoryNames:
+	table_width 2, CategoryNames
+	dw PhysicalMove
+	dw SpecialMove
+	dw StatusMove
+	dw Max_StatMove
+	assert_table_length NUM_MOVE_CATEGORIES
+
 Normal:    db "NORMAL@"
 Fighting:  db "FIGHTING@"
 Flying:    db "FLYING@"
@@ -41,3 +49,8 @@ Dragon:    db "DRAGON@"
 Dark:      db "DARK@"
 Fairy:     db "FAIRY@"
 UnknownType: db "???@"
+
+PhysicalMove:  db "PHYS@"
+SpecialMove:   db "SPEC@"
+StatusMove:    db "STAT@"
+Max_StatMove:  db "BEST@"

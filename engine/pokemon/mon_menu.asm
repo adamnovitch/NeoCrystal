@@ -1188,10 +1188,30 @@ PlaceMoveData:
 	hlcoord 12, 12
 	ld de, String_MoveAtk
 	call PlaceString
+; Print Move Category
+; End Move Category	
+; Print Move Type
 	ld a, [wCurSpecies]
 	ld b, a
 	hlcoord 2, 12
 	predef PrintMoveType
+; Print Move Accuracy
+	ld a, [wCurSpecies]
+	dec a
+	ld hl, Moves + MOVE_ACC_DEC
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	hlcoord 16, 12
+	cp 2
+	jr c, .no_accuracy
+	ld [wTextDecimalByte], a
+	ld de, wTextDecimalByte
+	lb bc, 1, 3
+	call PrintNum
+.continue_print_move_power
+; Print Move Power
 	ld a, [wCurSpecies]
 	dec a
 	ld hl, Moves + MOVE_POWER
@@ -1199,7 +1219,7 @@ PlaceMoveData:
 	call AddNTimes
 	ld a, BANK(Moves)
 	call GetFarByte
-	hlcoord 16, 12
+	hlcoord 12, 12
 	cp 2
 	jr c, .no_power
 	ld [wTextDecimalByte], a
@@ -1211,6 +1231,11 @@ PlaceMoveData:
 .no_power
 	ld de, String_MoveNoPower
 	call PlaceString
+
+.no_accuracy
+	ld de, String_MoveNoPower
+	call PlaceString
+	jr .continue_print_move_power
 
 .description
 	hlcoord 1, 14
@@ -1227,7 +1252,7 @@ String_MoveType_Bottom:
 ;	db moveTYPE
 ;	db "/└@"
 String_MoveAtk:
-	db "ATK/@"
+	db "   /   @"
 ;	db movePWR
 ;	db "/@"
 String_MoveNoPower:
