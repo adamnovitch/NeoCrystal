@@ -21,3 +21,12 @@ PokedexTypeSearchConversionTable:
 	db FAIRY
 	db UNKNOWN_TYPE
 	assert_table_length NUM_TYPES
+
+;PokedexMoveCategoryTable:
+;; entries correspond with PokedexMoveCategorySearchStrings (see data/types/search_strings.asm)
+;	table_width 1, PokedexMoveCategoryTable
+;	db PHYSICAL
+;	db SPECIAL
+;	db STATUS
+;	db MAX_STAT
+;	assert_table_length NUM_MOVE_CATEGORIES

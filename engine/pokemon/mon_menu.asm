@@ -1230,7 +1230,7 @@ PlaceMoveData:
 ; Print Move Accuracy
 	ld a, [wCurSpecies]
 	dec a
-	ld hl, Moves + MOVE_ACC_DEC
+	ld hl, (Moves + MOVE_ACC) out_of 255
 	ld bc, MOVE_LENGTH
 	call AddNTimes
 	ld a, BANK(Moves)
