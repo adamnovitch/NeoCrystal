@@ -1227,26 +1227,6 @@ PlaceMoveData:
 	ld b, a
 	hlcoord 2, 12
 	predef PrintMoveType
-; Print Move Accuracy
-	ld a, [wCurSpecies]
-	dec a
-	ld hl, (Moves + MOVE_ACC) out_of 255
-	ld bc, MOVE_LENGTH
-	call AddNTimes
-	ld a, BANK(Moves)
-	call GetFarByte
-	hlcoord 16, 12
-	cp 2
-	jr nc, .print_accuracy
-	ld de, String_MoveNoPower
-	call PlaceString
-	jr .continue_print_move_power
-.print_accuracy
-	ld [wTextDecimalByte], a
-	ld de, wTextDecimalByte
-	lb bc, 1, 3
-	call PrintNum
-.continue_print_move_power
 ; Print Move Power
 	ld a, [wCurSpecies]
 	dec a
@@ -1257,16 +1237,46 @@ PlaceMoveData:
 	call GetFarByte
 	hlcoord 12, 12
 	cp 2
-	jr c, .no_power
+	jr nc, .print_power
+	ld de, String_MoveNoPower
+	call PlaceString
+	jr .start_print_acc
+.print_power
 	ld [wTextDecimalByte], a
 	ld de, wTextDecimalByte
 	lb bc, 1, 3
 	call PrintNum
-	jr .description
-
-.no_power
+; Print Move Accuracy
+.start_print_acc
+	ld a, [wCurSpecies]
+	dec a
+	ld hl, Moves + MOVE_ACC
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	hlcoord 16, 12
+	cp 2
+	jr nc, .print_accuracy
 	ld de, String_MoveNoPower
 	call PlaceString
+	jr .description
+.print_accuracy
+	ld [wTextDecimalByte], a
+	ld a, $63
+	ldh [hDividend], a
+	ld a, $9c
+	ldh [hDividend + 1], a
+	ld a, $ff
+	ldh [hDivisor], a
+	ld b, 2
+	call Divide
+	ldh a, [hQuotient]
+	ld de, 0, a
+	lb bc, 1, 3
+	call PrintNum
+; PRINT DESCRIPTION
+	jr .description
 
 .description
 	hlcoord 1, 14
