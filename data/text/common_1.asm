@@ -4,17 +4,17 @@ _FruitBearingTreeText::
 	done
 
 _HeyItsFruitText::
-	text "Hey! It's"
+	text "Oh! An"
 	line "@"
 	text_ram wStringBuffer3
-	text "!"
+	text " tree!"
 	done
 
 _ObtainedFruitText::
 	text "Obtained"
 	line "@"
 	text_ram wStringBuffer3
-	text "!"
+	text "s!"
 	done
 
 _FruitPackIsFullText::
