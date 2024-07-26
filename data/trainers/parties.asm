@@ -476,7 +476,7 @@ YoungsterGroup:
 	; Location: Route 30
 	; Lore:     Top Percentage (Radio Tower)
 	db "JOEY@", TRAINERTYPE_MOVES
-	db 35, RATTATA,   TAIL_WHIP, QUICK_ATTACK, HYPER_FANG, PURSUIT
+	db 35, RATTATA,   TAIL_WHIP, QUICK_ATTACK, HYPER_FANG, BITE
 	db -1 ; end
 
 	; YOUNGSTER (14)
@@ -803,6 +803,9 @@ BirdKeeperGroup:
 	db -1 ; end
 
 	; BIRD_KEEPER (13)
+	; Name:     Bird Keeper Peter
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "PETER@", TRAINERTYPE_NORMAL
 	db  8, PIDGEY
 	db  9, HOOTHOOT
@@ -1800,7 +1803,10 @@ BugCatcherGroup:
 	db -1 ; end
 
 FisherGroup:
-	; FISHER JUSTIN (1) ROUTE 32
+	; FISHER (1)
+	; Name:     FISHER JUSTIN
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "JUSTIN@", TRAINERTYPE_NORMAL
 	db  9, MAGIKARP
 	db 11, MAGIKARP
@@ -1808,7 +1814,10 @@ FisherGroup:
 	db 15, MAGIKARP
 	db -1 ; end
 
-	; FISHER RALPH (2) ROUTE 32
+	; FISHER (2)
+	; Name:     FISHER RALPH
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "RALPH@", TRAINERTYPE_NORMAL
 	db 10, GOLDEEN
 	db -1 ; end
@@ -1825,7 +1834,10 @@ FisherGroup:
 	db 31, SEAKING
 	db -1 ; end
 
-	; FISHER HENRY (5) ROUTE 32
+	; FISHER (5)
+	; Name:     Fisher Henry
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "HENRY@", TRAINERTYPE_NORMAL
 	db  9, POLIWAG
 	db  9, POLIWAG
@@ -1899,12 +1911,18 @@ FisherGroup:
 	db 30, GYARADOS
 	db -1 ; end
 
-	; FISHER RALPH (16) ROUTE 32
+	; FISHER (16)
+	; Name:     FISHER RALPH
+	; Location: ROUTE 32
+	; Lore:     tbd (Ecruteak)
 	db "RALPH@", TRAINERTYPE_NORMAL
 	db 17, GOLDEEN
 	db -1 ; end
 
-	; FISHER RALPH (17) ROUTE 32
+	; FISHER (17)
+	; Name:     FISHER RALPH
+	; Location: ROUTE 32
+	; Lore:     tbd (Lake of Rage)
 	db "RALPH@", TRAINERTYPE_NORMAL
 	db 17, QWILFISH
 	db 19, GOLDEEN
@@ -1943,13 +1961,19 @@ FisherGroup:
 	db 38, REMORAID,   PSYBEAM, AURORA_BEAM, BUBBLEBEAM, HYPER_BEAM
 	db -1 ; end
 
-	; FISHER RALPH (23) ROUTE 32
+	; FISHER (23)
+	; Name:     FISHER RALPH
+	; Location: ROUTE 32
+	; Lore:     tbd (Champion)
 	db "RALPH@", TRAINERTYPE_NORMAL
 	db 30, QWILFISH
 	db 32, GOLDEEN
 	db -1 ; end
 
-	; FISHER RALPH (24) ROUTE 32
+	; FISHER (24)
+	; Name:     FISHER RALPH
+	; Location: ROUTE 32
+	; Lore:     tbd (Machine Part)
 	db "RALPH@", TRAINERTYPE_MOVES
 	db 35, QWILFISH,   TOXIC, MINIMIZE, SURF, PIN_MISSILE
 	db 39, SEAKING,    ENDURE, FLAIL, FURY_ATTACK, WATERFALL
@@ -2722,9 +2746,12 @@ FirebreatherGroup:
 	db -1 ; end
 
 	; FIREBREATHER (6)
+	; Name:     FIREBREATHER WALT
+	; Location: Route 35
+	; Lore:     tbd
 	db "WALT@", TRAINERTYPE_NORMAL
-	db 11, MAGMAR
-	db 13, MAGMAR
+	db 16, MAGBY
+	db 16, MAGMAR
 	db -1 ; end
 
 	; FIREBREATHER RAY (7) UNION 1F
@@ -2741,11 +2768,14 @@ FirebreatherGroup:
 
 JugglerGroup:
 	; JUGGLER (1)
+	; Name:     JUGGLER IRWIN
+	; Location: Route 35
+	; Lore:     tbd
 	db "IRWIN@", TRAINERTYPE_NORMAL
-	db  2, VOLTORB
-	db  6, VOLTORB
 	db 10, VOLTORB
+	db 12, VOLTORB
 	db 14, VOLTORB
+	db 16, VOLTORB
 	db -1 ; end
 
 	; JUGGLER (2)
@@ -2948,7 +2978,10 @@ PsychicGroup:
 	db -1 ; end
 
 PicnickerGroup:
-	; PICNICKER LIZ (1) ROUTE 32
+	; PICNICKER (1)
+	; Name:     PICNICKER LIZ
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db 10, NIDORAN_F
 	db -1 ; end
@@ -2961,13 +2994,19 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (3)
+	; Name:     PICKNICKER BROOKE
+	; Location: Route 35
+	; Lore:     tbd
 	db "BROOKE@", TRAINERTYPE_MOVES
-	db 16, PIKACHU,    THUNDERSHOCK, GROWL, QUICK_ATTACK, DOUBLE_TEAM
+	db 17, PIKACHU,    THUNDERSHOCK, GROWL, QUICK_ATTACK, DOUBLE_TEAM
 	db -1 ; end
 
 	; PICNICKER (4)
+	; Name:     PICKNICKER KIM
+	; Location: Route 35
+	; Lore:     tbd
 	db "KIM@", TRAINERTYPE_NORMAL
-	db 15, VULPIX
+	db 17, VULPIX
 	db -1 ; end
 
 	; PICNICKER (5)
@@ -3004,13 +3043,19 @@ PicnickerGroup:
 	db 16, PONYTA
 	db -1 ; end
 
-	; PICNICKER LIZ (11) ROUTE 32
+	; PICNICKER (11)
+	; Name:     PICNICKER LIZ
+	; Location: ROUTE 32
+	; Lore:     tbd (Ecruteak)
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db 15, WEEPINBELL
 	db 15, NIDORINA
 	db -1 ; end
 
-	; PICNICKER LIZ (12) ROUTE 32
+	; PICNICKER (12)
+	; Name:     PICNICKER Liz
+	; Location: ROUTE 32
+	; Lore:     tbd (Mahogany)
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db 19, WEEPINBELL
 	db 19, NIDORINO
@@ -3069,14 +3114,20 @@ PicnickerGroup:
 	db 36, PONYTA,     DOUBLE_TEAM, STOMP, FIRE_SPIN, SUNNY_DAY
 	db -1 ; end
 
-	; PICNICKER LIZ (22) ROUTE 32
+	; PICNICKER (22)
+	; Name:     PICNICKER Liz
+	; Location: ROUTE 32
+	; Lore:     tbd (Radio Tower)
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db 24, WEEPINBELL
 	db 26, NIDORINO
 	db 26, NIDOQUEEN
 	db -1 ; end
 
-	; PICNICKER LIZ (23) ROUTE 32
+	; PICNICKER (23)
+	; Name:     PICNICKER Liz
+	; Location: ROUTE 32
+	; Lore:     tbd (Champion)
 	db "LIZ@", TRAINERTYPE_MOVES
 	db 30, WEEPINBELL, SLEEP_POWDER, POISONPOWDER, STUN_SPORE, SLUDGE_BOMB
 	db 32, NIDOKING,   EARTHQUAKE, DOUBLE_KICK, POISON_STING, IRON_TAIL
@@ -3103,7 +3154,10 @@ PicnickerGroup:
 	db -1 ; end
 
 CamperGroup:
-	; CAMPER ROLAND (1) ROUTE 32
+	; CAMPER (1)
+	; Name:     CAMPER ROLAND
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "ROLAND@", TRAINERTYPE_NORMAL
 	db 10, NIDORAN_M
 	db -1 ; end
@@ -3114,16 +3168,22 @@ CamperGroup:
 	db -1 ; end
 
 	; CAMPER (3)
+	; Name:     CAMPER IVAN
+	; Location: Route 35
+	; Lore:     tbd
 	db "IVAN@", TRAINERTYPE_NORMAL
-	db 10, DIGLETT
-	db 10, ZUBAT
-	db 14, DIGLETT
+	db 14, WOOPER
+	db 14, ZUBAT
+	db 17, DIGLETT
 	db -1 ; end
 
 	; CAMPER (4)
+	; Name:     CAMPER ELLIOT
+	; Location: Route 35
+	; Lore:     tbd
 	db "ELLIOT@", TRAINERTYPE_NORMAL
-	db 13, SANDSHREW
-	db 15, MARILL
+	db 15, SANDSHREW
+	db 17, MARILL
 	db -1 ; end
 
 	; CAMPER (5)
