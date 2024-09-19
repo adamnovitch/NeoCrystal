@@ -68,7 +68,6 @@ CharmeleonEvosAttacks:
 	db 64, OUTRAGE
 	db  0; no more level-up moves
 
-
 CharizardEvosAttacks:
 	db  0; no more evolutions
 	db  1, SCRATCH
