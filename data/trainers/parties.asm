@@ -417,8 +417,9 @@ YoungsterGroup:
 	; Location: Route 34
 	; Lore:     Use Ian's faves
 	db "IAN@", TRAINERTYPE_NORMAL
-	db 10, MANKEY
-	db 12, DIGLETT
+	db 12, LARVITAR
+	db 12, HOUNDOUR
+	db 12, FLAAFFY
 	db -1 ; end
 
 	; YOUNGSTER (7)
@@ -590,10 +591,15 @@ SchoolboyGroup:
 	db "NATE@", TRAINERTYPE_NORMAL
 	db 55, DONPHAN
 	db 55, AERODACTYL
-	db 55, ARBOK
+	db 55, KANGASKHAN
 	db 55, SNORLAX
 	db 55, ELECTRODE
 	db 55, KINGLER
+;	db 55, PERSIAN
+;	db 55, STEELIX
+;	db 55, VENUSAUR
+;	db 55, TYPHLOSION
+;	db 55, RHYDON
 	db -1 ; end
 
 	; SCHOOLBOY (12)
@@ -1897,11 +1903,16 @@ FisherGroup:
 	db -1 ; end
 
 	; FISHER (14)
-	db "STEPHEN@", TRAINERTYPE_NORMAL
-	db 25, MAGIKARP
-	db 25, MAGIKARP
-	db 31, QWILFISH
-	db 31, TENTACRUEL
+	; Name:     Fisher Rusty
+	; Location: ROUTE 12
+	; Lore:     Use Rusty's Faves.
+	db "RUSTY@", TRAINERTYPE_NORMAL
+	db 55, HITMONLEE
+	db 55, TANGELA
+	db 55, SHUCKLE
+	db 55, AMPHAROS
+	db 55, TOGETIC
+	db 55, DRAGONITE
 	db -1 ; end
 
 	; FISHER (15)
@@ -2907,8 +2918,16 @@ ExecutiveMGroup:
 
 PsychicGroup:
 	; PSYCHIC_T (1)
+	; Name:     Psychic Nathan
+	; Location: Ruins of Alph
+	; Lore:     Use Nate's Faves.
 	db "NATHAN@", TRAINERTYPE_NORMAL
-	db 26, GIRAFARIG
+	db 26, PHANPY
+	db 26, MEOWTH
+	db 26, ONIX
+	db 26, BULBASAUR
+	db 26, HOUNDOOM
+	db 26, RHYHORN
 	db -1 ; end
 
 	; PSYCHIC_T (2)

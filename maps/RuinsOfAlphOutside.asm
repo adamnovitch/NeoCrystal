@@ -208,17 +208,29 @@ SuperNerdStanAfterBattleText:
 	done
 
 PsychicNathanSeenText:
-	text "Hmmm… This is a"
-	line "strange place."
+;                        "
+	text "Oh, a trainer!"
+	line "I can finally"
+	cont "test out my VGC"
+	cont "team!"
+
+	para "Hope you have"
+	line "SMACKDOWN Heal!"
 	done
 
 PsychicNathanBeatenText:
-	text "…"
+;                        "
+	text "Maybe I need to"
+	line "workshop Cobra-"
+	cont "PSYCH Light-"
+	cont "ningbolt…"
 	done
 
 PsychicNathanAfterBattleText:
-	text "I like thinking"
-	line "here."
+;                        "
+	text "I'm going back "
+	line "to school. See "
+	cont "you later!"
 	done
 
 RuinsOfAlphOutsideMysteryChamberSignText:
