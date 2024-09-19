@@ -543,7 +543,8 @@ YoungsterIanSeenText:
 
 YoungsterIanBeatenText:
 ;                        "
-	text "Damnit…"
+	text "…"
+	line "…damnit…"
 	done
 
 YoungsterIanAfterText:
