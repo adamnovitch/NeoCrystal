@@ -3299,3 +3299,19 @@ CelebiEvosAttacks:
 	db 80, PETAL_DANCE
 	db 90, FUTURE_SIGHT
 	db  0; no more level-up moves
+
+;ArceusEvosAttacks:
+;	db  0; no more evolutions
+;	db  1, SWIFT         ;SEISMIC_TOSS
+;	db  1, CONFUSION     ;COSMIC_POWER
+;	db 10, GRAVITY       ;GRAVITY
+;	db 20, ANCIENTPOWER  ;EARTH_POWER
+;	db 30, PSYCHIC_M     ;HYPER_VOICE
+;	db 40, PERISH_SONG   ;EXTREMESPEED
+;	db 50, TRI_ATTACK    ;HEALING_WISH
+;	db 60, EXTREMESPEED  ;FUTURE_SIGHT
+;	db 70, FUTURE_SIGHT  ;RECOVER
+;	db 80, RECOVER       ;HYPER_BEAM
+;	db 90, HYPER_BEAM    ;PERISH_SONG
+;	db 90, GIGA_IMPACT   ;JUDGEMENT
+;	db  0; no more level-up moves
