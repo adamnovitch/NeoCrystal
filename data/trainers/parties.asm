@@ -3747,35 +3747,52 @@ OfficerGroup:
 	db -1 ; end
 
 GruntFGroup:
-	; GRUNTF (1) SLOWPOKE WELL 2
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db  9, ZUBAT
-	db 11, EKANS
+	; GRUNTF (1)
+	; Name:     Monica
+	; Location: SLOWPOKE WELL
+	; Lore:     Mambo Number 5 for all GruntFs because lol
+	db "MONICA@", TRAINERTYPE_NORMAL
+	db 12, ZUBAT
+	db 14, EKANS
 	db -1 ; end
 
 	; GRUNTF (2)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 26, ARBOK
+	; Name:     JESSIE
+	; Location: Radio Tower
+	; Lore:     TEAM ROCKET ANIME
+	db "JESSIE@", TRAINERTYPE_MOVES
+	db 36, LICKITUNG   BIND, STOMP, SLAM, LICK
+	db 36, WOBBUFET    COUNTER, MIRROR_COAT, SAFEGUARD, DESTINY_BOND
+	db 36, BLISSEY     LIGHT_SCREEN, REFLECT, RECOVER, SWIFT
+	db 36, YANMA       WING_ATTACK, QUICK_ATTACK, ANCIENTPOWER, STEEL_WING
+	db 38, ARBOK       TOXIC, HEADBUTT, SLUDGE_BOMB, DIG
 	db -1 ; end
 
 	; GRUNTF (3)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 25, GLOOM
-	db 25, GLOOM
+	; Name:     Tina
+	; Location: Goldenrod Underground
+	db "TINA@", TRAINERTYPE_NORMAL
+	db 32, VILEPLUME
+	db 32, VICTREEBEL
 	db -1 ; end
 
 	; GRUNTF (4)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 21, EKANS
-	db 23, ODDISH
-	db 21, EKANS
-	db 24, GLOOM
+	; Name:     Cassidy
+	; Location: Radio Tower
+	; Lore:     TEAM ROCKET ANIME
+	db "CASSIDY@", TRAINERTYPE_NORMAL
+	db 35, RATICATE
+	db 35, HOUNDOUR
+	db 35, TENTACRUEL
+	db 35, GRANBULL
 	db -1 ; end
 
 	; GRUNTF (5)
-	db "GRUNT@", TRAINERTYPE_MOVES
-	db 18, EKANS,      WRAP, LEER, POISON_STING, BITE
-	db 18, GLOOM,      ABSORB, SWEET_SCENT, STUN_SPORE, SLEEP_POWDER
+	; Name:     Rita
+	; Location: Rocket HQ
+	db "RITA@", TRAINERTYPE_NORMAL
+	db 32, ARBOK
+	db 32, VILEPLUME
 	db -1 ; end
 
 MysticalmanGroup:
