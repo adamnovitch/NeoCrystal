@@ -115,7 +115,7 @@ Moves:
 	move QUICK_ATTACK, EFFECT_PRIORITY_HIT,       40, NORMAL,       100, 30,   0, PHYSICAL ; ok
 	move RAGE,         EFFECT_RAGE,               20, NORMAL,       100, 20,   0, PHYSICAL ; ok
 	move TELEPORT,     EFFECT_TELEPORT,            0, PSYCHIC_TYPE, 100, 20,   0, STATUS   ; ok
-	move NIGHT_SHADE,  EFFECT_LEVEL_DAMAGE,        1, GHOST,        100, 15,   0, SPECIAL  ; New effect?
+	move NIGHT_SHADE,  EFFECT_NORMAL_HIT,         55, GHOST,        100, 20,   0, SPECIAL  ; ok, hi crit chance
 	move MIMIC,        EFFECT_MIMIC,               0, NORMAL,       100, 10,   0, STATUS   ; ok
 	move SCREECH,      EFFECT_DEFENSE_DOWN_2,      0, NORMAL,        85, 40,   0, STATUS   ; ok
 	move DOUBLE_TEAM,  EFFECT_EVASION_UP,          0, NORMAL,       100, 15,   0, STATUS   ; ok

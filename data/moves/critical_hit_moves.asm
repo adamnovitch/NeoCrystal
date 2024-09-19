@@ -7,4 +7,5 @@ CriticalHitMoves:
 	db AEROBLAST
 	db CROSS_CHOP
 	db AIR_CUTTER
+	db NIGHT_SHADE
 	db -1
