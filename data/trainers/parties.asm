@@ -3584,7 +3584,7 @@ PokefanMGroup:
 	db -1 ; end
 
 KimonoGirlGroup:
-	; KIMONO_GIRL (1)
+	; KIMONO_GIRL (1) not sure about this one?
 	db "NAOKO@", TRAINERTYPE_NORMAL
 	db 20, SKIPLOOM
 	db 20, VULPIX
@@ -3592,28 +3592,43 @@ KimonoGirlGroup:
 	db -1 ; end
 
 	; KIMONO_GIRL (2)
-	db "NAOKO@", TRAINERTYPE_NORMAL
-	db 17, FLAREON
+	; Name:     Kimono Girl Naoko
+	; Location: Ecruteak City
+	; Lore:     
+	db "NAOKO@", TRAINERTYPE_MOVES
+	db 20, FLAREON, QUICK_ATTACK, FLAME_WHEEL, SMOG, LEER
 	db -1 ; end
 
 	; KIMONO_GIRL (3)
-	db "SAYO@", TRAINERTYPE_NORMAL
-	db 17, ESPEON
+	; Name:     Kimono Girl Sayo
+	; Location: Ecruteak City
+	; Lore:     
+	db "SAYO@", TRAINERTYPE_MOVES
+	db 20, ESPEON, SWIFT, PSYBEAM, NIGHT_SHADE, MEDITATE
 	db -1 ; end
 
 	; KIMONO_GIRL (4)
-	db "ZUKI@", TRAINERTYPE_NORMAL
-	db 17, UMBREON
+	; Name:     Kimono Girl Zuki
+	; Location: Ecruteak City
+	; Lore:     
+	db "ZUKI@", TRAINERTYPE_MOVES
+	db 20, UMBREON, QUICK_ATTACK, FAINT_ATTACK, SLUDGE, CONFUSE_RAY
 	db -1 ; end
 
 	; KIMONO_GIRL (5)
-	db "KUNI@", TRAINERTYPE_NORMAL
-	db 17, VAPOREON
+	; Name:     Kimono Girl Kuni
+	; Location: Ecruteak City
+	; Lore:     
+	db "KUNI@", TRAINERTYPE_MOVES
+	db 20, VAPOREON, QUICK_ATTACK, BUBBLEBEAM, AURORABEAM,
 	db -1 ; end
 
 	; KIMONO_GIRL (6)
-	db "MIKI@", TRAINERTYPE_NORMAL
-	db 17, JOLTEON
+	; Name:     Kimono Girl Miki
+	; Location: Ecruteak City
+	; Lore:     
+	db "MIKI@", TRAINERTYPE_MOVES
+	db 20, JOLTEON, QUICK_ATTACK, SPARK, DOUBLE_KICK, SHARPEN
 	db -1 ; end
 
 TwinsGroup:
