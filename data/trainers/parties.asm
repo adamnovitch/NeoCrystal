@@ -3620,7 +3620,7 @@ KimonoGirlGroup:
 	; Location: Ecruteak City
 	; Lore:     
 	db "KUNI@", TRAINERTYPE_MOVES
-	db 20, VAPOREON, QUICK_ATTACK, BUBBLEBEAM, AURORABEAM,
+	db 20, VAPOREON, SWIFT, BUBBLEBEAM, AURORABEAM, MEDITATE
 	db -1 ; end
 
 	; KIMONO_GIRL (6)
