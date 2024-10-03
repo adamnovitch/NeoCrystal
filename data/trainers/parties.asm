@@ -3617,64 +3617,94 @@ KimonoGirlGroup:
 	db -1 ; end
 
 TwinsGroup:
-	; TWINS AMY & MAY (1) AZALEA GYM
+	; TWINS (1)
 	db "AMY & MAY@", TRAINERTYPE_NORMAL
-	db 11, SPINARAK
-	db 11, LEDYBA
+	; Name:     Twins Amy & May
+	; Location: Azalea Gym
+	; Lore:     
+	db 15, LEDYBA
+	db 15, SPINARAK
 	db -1 ; end
 
 	; TWINS (2)
+	; Name:     Twins Ann & Anne
+	; Location: Route 37
+	; Lore:     
 	db "ANN & ANNE@", TRAINERTYPE_MOVES
-	db 16, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
-	db 16, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
+	db 20, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
+	db 20, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
 	db -1 ; end
 
 	; TWINS (3)
+	; Name:     Twins Ann & Anne
+	; Location: Route 37
+	; Lore:     (the other twin)
 	db "ANN & ANNE@", TRAINERTYPE_MOVES
-	db 16, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
-	db 16, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
+	db 20, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
+	db 20, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
 	db -1 ; end
 
-	; TWINS AMY & MAY (4) AZALEA GYM
+	; TWINS (4)
 	db "AMY & MAY@", TRAINERTYPE_NORMAL
-	db 11, LEDYBA
-	db 11, SPINARAK
+	; Name:     Twins Amy & May
+	; Location: Azalea Gym
+	; Lore:     (other twin)
+	db 15, SPINARAK
+	db 15, LEDYBA
 	db -1 ; end
 
 	; TWINS (5)
 	db "JO & ZOE@", TRAINERTYPE_NORMAL
-	db 35, VICTREEBEL
-	db 35, VILEPLUME
+	; Name:     Twins Jo & Zoe
+	; Location: Azalea Gym
+	; Lore:     
+	db 55, VILEPLUME
+	db 55, VICTREEBEL
 	db -1 ; end
 
 	; TWINS (6)
 	db "JO & ZOE@", TRAINERTYPE_NORMAL
-	db 35, VILEPLUME
-	db 35, VICTREEBEL
+	; Name:     Twins Jo & Zoe
+	; Location: Azalea Gym
+	; Lore:     (other twin)
+	db 55, VILEPLUME
+	db 55, VICTREEBEL
 	db -1 ; end
 
 	; TWINS (7)
 	db "MEG & PEG@", TRAINERTYPE_NORMAL
-	db 31, TEDDIURSA
-	db 31, PHANPY
+	; Name:     Twins Meg & Peg
+	; Location: S.S. Aqua
+	; Lore:     
+	db 55, DONPHAN
+	db 55, URSARING
 	db -1 ; end
 
 	; TWINS (8)
 	db "MEG & PEG@", TRAINERTYPE_NORMAL
-	db 31, PHANPY
-	db 31, TEDDIURSA
+	; Name:     Twins Meg & Peg
+	; Location: S.S. Aqua
+	; Lore:     (other twin)
+	db 55, URSARING
+	db 55, DONPHAN
 	db -1 ; end
 
 	; TWINS (9)
+	; Name:     Twins Lea & Pia
+	; Location: Dragon's Den
+	; Lore:     
 	db "LEA & PIA@", TRAINERTYPE_MOVES
-	db 35, DRATINI,    THUNDER_WAVE, TWISTER, FLAMETHROWER, HEADBUTT
-	db 35, DRATINI,    THUNDER_WAVE, TWISTER, ICE_BEAM, HEADBUTT
+	db 38, DRATINI,    THUNDER_WAVE, DRAGON_RAGE, SKULL_BASH, FLAMETHROWER
+	db 38, DRATINI,    THUNDER_WAVE, TWISTER, ICE_BEAM, SLAM
 	db -1 ; end
 
 	; TWINS (10)
+	; Name:     Twins Lea & Pia
+	; Location: Dragon's Den
+	; Lore:     (other twin)
 	db "LEA & PIA@", TRAINERTYPE_MOVES
-	db 38, DRATINI,    THUNDER_WAVE, TWISTER, ICE_BEAM, HEADBUTT
-	db 38, DRATINI,    THUNDER_WAVE, TWISTER, FLAMETHROWER, HEADBUTT
+	db 38, DRATINI,    THUNDER_WAVE, TWISTER, ICE_BEAM, SLAM
+	db 38, DRATINI,    THUNDER_WAVE, DRAGON_RAGE, SKULL_BASH, FLAMETHROWER
 	db -1 ; end
 
 PokefanFGroup:
