@@ -3679,37 +3679,58 @@ TwinsGroup:
 
 PokefanFGroup:
 	; POKEFANF (1)
+	; Name:     Pokefan f Beverly
+	; Location: Park
+	; Lore:     
 	db "BEVERLY@", TRAINERTYPE_ITEM
-	db 14, SNUBBULL,   BERRY
+	db 20, SNUBBULL,   BERRY
 	db -1 ; end
 
 	; POKEFANF (2)
+	; Name:     Pokefan f Ruth
+	; Location: ROUTE 39
+	; Lore:     
 	db "RUTH@", TRAINERTYPE_ITEM
-	db 17, PIKACHU,    BERRY
+	db 25, PIKACHU,    BERRY
+	db 25, MARRILL,    BERRY
 	db -1 ; end
 
 	; POKEFANF (3)
-	db "BEVERLY@", TRAINERTYPE_ITEM
-	db 18, SNUBBULL,   BERRY
-	db -1 ; end
-
-	; POKEFANF (4)
+	; Name:     Pokefan f Beverly
+	; Location: Park
+	; Lore:     (Mahogany)
 	db "BEVERLY@", TRAINERTYPE_ITEM
 	db 30, GRANBULL,   BERRY
 	db -1 ; end
 
+	; POKEFANF (4)
+	; Name:     Pokefan f Beverly
+	; Location: Park
+	; Lore:     (Radio Tower)
+	db "BEVERLY@", TRAINERTYPE_ITEM
+	db 40, GRANBULL,   BERRY
+	db -1 ; end
+
 	; POKEFANF (5)
+	; Name:     Pokefan f Georgia
+	; Location: S.S. Aqua
+	; Lore:     
 	db "GEORGIA@", TRAINERTYPE_ITEM
-	db 23, SENTRET,    BERRY
-	db 23, SENTRET,    BERRY
-	db 23, SENTRET,    BERRY
-	db 28, FURRET,     BERRY
-	db 23, SENTRET,    BERRY
+	db 55, FURRET,     BERRY
+	db 55, GRANBULL,   BERRY
+	db 55, WIGGLYTUFF, BERRY
+	db 55, CLEFABLE,   BERRY
+	db 55, FURRET,     BERRY
 	db -1 ; end
 
 	; POKEFANF (6)
+	; Name:     Pokefan f Jaime
+	; Location: ROUTE 39
+	; Lore:     
 	db "JAIME@", TRAINERTYPE_ITEM
-	db 16, MEOWTH,     BERRY
+	db 25, MEOWTH,     BERRY
+	db 25, CLEFAIRY,   BERRY
+	db 25, SNUBBULL,   BERRY
 	db -1 ; end
 
 RedGroup:
@@ -3726,12 +3747,12 @@ RedGroup:
 BlueGroup:
 	; BLUE (1)
 	db "BLUE@", TRAINERTYPE_ITEM_MOVES
-	db 67, PIDGEOT,    GOLD_BERRY,   STEEL_WING, WHIRLWIND, WING_ATTACK, MIRROR_MOVE
-	db 65, ALAKAZAM,   GOLD_BERRY,   RECOVER, FUTURE_SIGHT, PSYCHIC_M, REFLECT
-	db 67, RHYDON,     BITTER_BERRY, THRASH, CRUNCH, ROCK_SLIDE, EARTHQUAKE
-	db 70, LAPRAS,     LEFTOVERS,    BODY_SLAM, BLIZZARD, CONFUSE_RAY, DRAGONBREATH
-	db 70, EXEGGUTOR,  GOLD_BERRY,   SUNNY_DAY, LEECH_SEED, PSYCHIC_M, SOLARBEAM
-	db 70, ARCANINE,   GOLD_BERRY,   DRAGONBREATH, ROAR, FLAMETHROWER, EXTREMESPEED
+	db 75, PIDGEOT,    GOLD_BERRY,   STEEL_WING, WHIRLWIND, WING_ATTACK, MIRROR_MOVE
+	db 75, ALAKAZAM,   GOLD_BERRY,   RECOVER, FUTURE_SIGHT, PSYCHIC_M, REFLECT
+	db 75, RHYDON,     BITTER_BERRY, THRASH, CRUNCH, ROCK_SLIDE, EARTHQUAKE
+	db 78, LAPRAS,     LEFTOVERS,    BODY_SLAM, BLIZZARD, CONFUSE_RAY, DRAGONBREATH
+	db 77, EXEGGUTOR,  GOLD_BERRY,   SUNNY_DAY, LEECH_SEED, PSYCHIC_M, SOLARBEAM
+	db 80, ARCANINE,   GOLD_BERRY,   DRAGONBREATH, ROAR, FLAMETHROWER, EXTREMESPEED
 	db -1 ; end
 
 OfficerGroup:
