@@ -3102,13 +3102,19 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (16)
-	db "TIFFANY@", TRAINERTYPE_MOVES
-	db 31, CLEFAIRY,   ENCORE, SING, DOUBLESLAP, MINIMIZE
+	; Name:     PICNICKER TIFFANY
+	; Location: ROUTE 43
+	; Lore:     (radio)
+	db "TIFFANY@", TRAINERTYPE_NORMAL
+	db 35, CLEFABLE
 	db -1 ; end
 
 	; PICNICKER (17)
-	db "TIFFANY@", TRAINERTYPE_MOVES
-	db 37, CLEFAIRY,   ENCORE, DOUBLESLAP, MINIMIZE, METRONOME
+	; Name:     PICNICKER TIFFANY
+	; Location: ROUTE 43
+	; Lore:     (champion)
+	db "TIFFANY@", TRAINERTYPE_NORMAL
+	db 55, CLEFABLE
 	db -1 ; end
 
 	; PICNICKER (18)
@@ -3123,8 +3129,11 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (20)
+	; Name:     PICNICKER TIFFANY
+	; Location: ROUTE 43
+	; Lore:     (first)
 	db "TIFFANY@", TRAINERTYPE_MOVES
-	db 20, CLEFAIRY,   ENCORE, SING, DOUBLESLAP, MINIMIZE
+	db 24, CLEFAIRY,   ENCORE, SING, DOUBLESLAP, MINIMIZE
 	db -1 ; end
 
 	; PICNICKER (21)
@@ -3169,8 +3178,11 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (26)
+	; Name:     PICNICKER TIFFANY
+	; Location: ROUTE 43
+	; Lore:     (machine part)
 	db "TIFFANY@", TRAINERTYPE_MOVES
-	db 43, CLEFAIRY,   METRONOME, ENCORE, MOONLIGHT, MINIMIZE
+	db 60, CLEFABLE,   MOONBLAST, MOONLIGHT, FIRE_BLAST, PSYCHIC_M
 	db -1 ; end
 
 CamperGroup:
