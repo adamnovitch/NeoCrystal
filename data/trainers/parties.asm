@@ -86,38 +86,38 @@ ClairGroup:
 Rival1Group:
 	; RIVAL1 (1)
 	db "?@", TRAINERTYPE_NORMAL
-	db  7, CHIKORITA
+	db  6, CHIKORITA
 	db -1 ; end
 
 	; RIVAL1 (2)
 	db "?@", TRAINERTYPE_NORMAL
-	db  7, CYNDAQUIL
+	db  6, CYNDAQUIL
 	db -1 ; end
 
 	; RIVAL1 (3)
 	db "?@", TRAINERTYPE_NORMAL
-	db  7, TOTODILE
+	db  6, TOTODILE
 	db -1 ; end
 
 	; RIVAL1 (4)
 	db "?@", TRAINERTYPE_NORMAL
 	db 16, GASTLY
 	db 18, ZUBAT
-	db 21, BAYLEEF
+	db 20, BAYLEEF
 	db -1 ; end
 
 	; RIVAL1 (5)
 	db "?@", TRAINERTYPE_NORMAL
 	db 16, GASTLY
 	db 18, ZUBAT
-	db 21, QUILAVA
+	db 20, QUILAVA
 	db -1 ; end
 
 	; RIVAL1 (6)
 	db "?@", TRAINERTYPE_NORMAL
 	db 16, GASTLY
 	db 18, ZUBAT
-	db 21, CROCONAW
+	db 20, CROCONAW
 	db -1 ; end
 
 	; RIVAL1 (7)
@@ -3482,23 +3482,32 @@ MediumGroup:
 
 BoarderGroup:
 	; BOARDER (1)
+	; Name:     Boarder Ronald
+	; Location: Mahogany Gym
+	; Lore:     
 	db "RONALD@", TRAINERTYPE_NORMAL
-	db 24, SEEL
-	db 25, DEWGONG
-	db 24, SEEL
+	db 30, DELIBIRD
+	db 28, SWINUB
+	db 26, SNEASEL
 	db -1 ; end
 
 	; BOARDER (2)
+	; Name:     Boarder Brad
+	; Location: Mahogany Gym
+	; Lore:     
 	db "BRAD@", TRAINERTYPE_NORMAL
 	db 26, SWINUB
-	db 26, SWINUB
+	db 29, SWINUB
 	db -1 ; end
 
 	; BOARDER (3)
+	; Name:     Boarder Douglas
+	; Location: Mahogany Gym
+	; Lore:     
 	db "DOUGLAS@", TRAINERTYPE_NORMAL
-	db 24, SHELLDER
-	db 25, CLOYSTER
-	db 24, SHELLDER
+	db 25, SHELLDER
+	db 27, CLOYSTER
+	db 26, SMOOCHUM
 	db -1 ; end
 
 PokefanMGroup:
