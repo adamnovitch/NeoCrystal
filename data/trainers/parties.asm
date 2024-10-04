@@ -3379,17 +3379,23 @@ SageGroup:
 	db -1 ; end
 
 	; SAGE (5)
+	; Name:     SAGE Jeffrey
+	; Location: Ecruteak Gym
+	; Lore:     n/a
 	db "JEFFREY@", TRAINERTYPE_NORMAL
-	db 22, HAUNTER
+	db 25, HAUNTER
 	db -1 ; end
 
 	; SAGE (6)
+	; Name:     SAGE PING
+	; Location: Ecruteak Gym
+	; Lore:     n/a
 	db "PING@", TRAINERTYPE_NORMAL
-	db 16, GASTLY
-	db 16, GASTLY
-	db 16, GASTLY
-	db 16, GASTLY
-	db 16, GASTLY
+	db 18, GASTLY
+	db 18, GASTLY
+	db 18, GASTLY
+	db 18, MISDREAVUS
+	db 18, HAUNTER
 	db -1 ; end
 
 	; SAGE (7)
@@ -3422,21 +3428,33 @@ SageGroup:
 	db -1 ; end
 
 	; SAGE (10)
+	; Name:     SAGE GAKU
+	; Location: Tin Tower
+	; Lore:     n/a
 	db "GAKU@", TRAINERTYPE_NORMAL
-	db 32, NOCTOWL
-	db 32, FLAREON
+	db 35, NOCTOWL
+	db 35, XATU
+	db 35, FLAREON
 	db -1 ; end
 
 	; SAGE (11)
+	; Name:     SAGE MASA
+	; Location: Tin Tower
+	; Lore:     n/a
 	db "MASA@", TRAINERTYPE_NORMAL
-	db 32, NOCTOWL
-	db 32, JOLTEON
+	db 35, NOCTOWL
+	db 35, STANTLER
+	db 35, JOLTEON
 	db -1 ; end
 
 	; SAGE (12)
+	; Name:     SAGE KOJI
+	; Location: Tin Tower
+	; Lore:     n/a
 	db "KOJI@", TRAINERTYPE_NORMAL
-	db 32, NOCTOWL
-	db 32, VAPOREON
+	db 35, NOCTOWL
+	db 35, LEDIAN
+	db 35, VAPOREON
 	db -1 ; end
 
 MediumGroup:
