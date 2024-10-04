@@ -3183,8 +3183,12 @@ CamperGroup:
 	db -1 ; end
 
 	; CAMPER (2)
+	; Name:     Camper Todd
+	; Location: Route 34
+	; Lore:     n/a
 	db "TODD@", TRAINERTYPE_NORMAL
-	db 14, PSYDUCK
+	db 16, PSYDUCK
+	db 16, GEODUDE
 	db -1 ; end
 
 	; CAMPER (3)
@@ -3207,58 +3211,84 @@ CamperGroup:
 	db -1 ; end
 
 	; CAMPER (5)
+	; Name:     Camper Barry
+	; Location: Fuchsia Gym
+	; Lore:     
 	db "BARRY@", TRAINERTYPE_NORMAL
-	db 36, NIDOKING
+	db 55, NIDOKING
+	db 55, NIDOQUEEN
 	db -1 ; end
 
 	; CAMPER (6)
+	; Name:     Camper Lloyd
+	; Location: Route 25
+	; Lore:     
 	db "LLOYD@", TRAINERTYPE_NORMAL
-	db 34, NIDOKING
+	db 55, RHYDON
+	db 55, NIDOKING
 	db -1 ; end
 
 	; CAMPER (7)
+	; Name:     Camper Dean
+	; Location: Route 9
+	; Lore:     
 	db "DEAN@", TRAINERTYPE_NORMAL
-	db 33, GOLDUCK
-	db 31, SANDSLASH
+	db 55, GOLDUCK
+	db 55, SANDSLASH
+	db 55, TANGELA
 	db -1 ; end
 
 	; CAMPER (8)
+	; Name:     Camper Sid
+	; Location: Route 9
+	; Lore:     
 	db "SID@", TRAINERTYPE_NORMAL
-	db 32, DUGTRIO
-	db 29, PRIMEAPE
-	db 29, POLIWRATH
+	db 55, DUGTRIO
+	db 55, PRIMEAPE
+	db 55, POLIWRATH
 	db -1 ; end
 
-	; CAMPER (9)
+	; CAMPER (9) unused
 	db "HARVEY@", TRAINERTYPE_NORMAL
 	db 15, NIDORINO
 	db -1 ; end
 
-	; CAMPER (10)
+	; CAMPER (10) unused
 	db "DALE@", TRAINERTYPE_NORMAL
 	db 15, NIDORINO
 	db -1 ; end
 
 	; CAMPER (11)
+	; Name:     Camper Ted
+	; Location: Route 46
+	; Lore:     (after gym 3 presumably)
 	db "TED@", TRAINERTYPE_NORMAL
-	db 17, MANKEY
+	db 25, MANKEY
 	db -1 ; end
 
 	; CAMPER (12)
+	; Name:     Camper Todd
+	; Location: Route 34
+	; Lore:     (cianwood)
 	db "TODD@", TRAINERTYPE_NORMAL
-	db 17, GEODUDE
-	db 17, GEODUDE
-	db 23, PSYDUCK
+	db 25, PSYDUCK
+	db 25, SLUGMA
+	db 25, MACHOP
+	db 25, GRAVELER
 	db -1 ; end
 
 	; CAMPER (13)
+	; Name:     Camper Todd
+	; Location: Route 34
+	; Lore:     (blackthorn)
 	db "TODD@", TRAINERTYPE_NORMAL
-	db 23, GEODUDE
-	db 23, GEODUDE
-	db 26, PSYDUCK
+	db 30, PSYDUCK
+	db 30, SLUGMA
+	db 30, MACHOKE
+	db 30, GRAVELER
 	db -1 ; end
 
-	; CAMPER (14)
+	; CAMPER (14) unused
 	db "THOMAS@", TRAINERTYPE_NORMAL
 	db 33, GRAVELER
 	db 36, GRAVELER
@@ -3266,7 +3296,7 @@ CamperGroup:
 	db 42, GOLDUCK
 	db -1 ; end
 
-	; CAMPER (15)
+	; CAMPER (15) unused
 	db "LEROY@", TRAINERTYPE_NORMAL
 	db 33, GRAVELER
 	db 36, GRAVELER
@@ -3274,7 +3304,7 @@ CamperGroup:
 	db 42, GOLDUCK
 	db -1 ; end
 
-	; CAMPER (16)
+	; CAMPER (16) unused
 	db "DAVID@", TRAINERTYPE_NORMAL
 	db 33, GRAVELER
 	db 36, GRAVELER
@@ -3282,7 +3312,7 @@ CamperGroup:
 	db 42, GOLDUCK
 	db -1 ; end
 
-	; CAMPER (17)
+	; CAMPER (17) unused
 	db "JOHN@", TRAINERTYPE_NORMAL
 	db 33, GRAVELER
 	db 36, GRAVELER
@@ -3291,38 +3321,55 @@ CamperGroup:
 	db -1 ; end
 
 	; CAMPER (18)
+	; Name:     Camper Jerry
+	; Location: Pewter Gym
+	; Lore:     Was there in RBY too
 	db "JERRY@", TRAINERTYPE_NORMAL
-	db 37, SANDSLASH
+	db 55, DUGTRIO
+	db 55, SANDSLASH
+	db 55, RHYDON
 	db -1 ; end
 
 	; CAMPER (19)
+	; Name:     Camper Spencer
+	; Location: Route 43
+	; Lore:     n/a
 	db "SPENCER@", TRAINERTYPE_NORMAL
-	db 17, SANDSHREW
-	db 17, SANDSLASH
-	db 19, ZUBAT
+	db 30, SANDSLASH
+	db 30, AZUMARILL
+	db 30, GOLBAT
 	db -1 ; end
 
 	; CAMPER (20)
+	; Name:     Camper Todd
+	; Location: Route 34
+	; Lore:     (champion)
 	db "TODD@", TRAINERTYPE_NORMAL
-	db 30, GRAVELER
-	db 30, GRAVELER
-	db 30, SLUGMA
-	db 32, PSYDUCK
+	db 55, MAGCARGO
+	db 55, GOLDUCK
+	db 55, MACHAMP
+	db 55, GOLEM
 	db -1 ; end
 
 	; CAMPER (21)
+	; Name:     Camper Todd
+	; Location: Route 34
+	; Lore:     (machine part)
 	db "TODD@", TRAINERTYPE_MOVES
-	db 33, GRAVELER,   SELFDESTRUCT, ROCK_THROW, HARDEN, MAGNITUDE
-	db 33, GRAVELER,   SELFDESTRUCT, ROCK_THROW, HARDEN, MAGNITUDE
-	db 36, MAGCARGO,   ROCK_THROW, HARDEN, AMNESIA, FLAMETHROWER
-	db 34, GOLDUCK,    DISABLE, PSYCHIC_M, SURF, PSYCH_UP
+	db 60, MAGCARGO,   RECOVER, FIRE_BLAST, ROCK_SLIDE, BODY_SLAM
+	db 60, GOLDUCK,    PSYCHIC_M, SURF, MEDITATE, AMNESIA
+	db 60, MACHAMP,    CROSS_CHOP, MEDITATE, SWORDS_DANCE, DOUBLE_EDGE
+	db 60, GOLEM,      EARTHQUAKE, ROCK_SLIDE, SLAM, WITHDRAW
 	db -1 ; end
 
 	; CAMPER (22)
+	; Name:     Camper Quentin
+	; Location: Route 45
+	; Lore:     n/a
 	db "QUENTIN@", TRAINERTYPE_NORMAL
-	db 30, FEAROW
-	db 30, PRIMEAPE
-	db 30, TAUROS
+	db 38, FEAROW
+	db 38, PRIMEAPE
+	db 38, TAUROS
 	db -1 ; end
 
 ExecutiveFGroup:
@@ -3487,17 +3534,17 @@ MediumGroup:
 	db 22, HAUNTER
 	db -1 ; end
 
-	; MEDIUM (3)
+	; MEDIUM (3) unused
 	db "BETHANY@", TRAINERTYPE_NORMAL
 	db 25, HAUNTER
 	db -1 ; end
 
-	; MEDIUM (4)
+	; MEDIUM (4) unused
 	db "MARGRET@", TRAINERTYPE_NORMAL
 	db 25, HAUNTER
 	db -1 ; end
 
-	; MEDIUM (5)
+	; MEDIUM (5) unused
 	db "ETHEL@", TRAINERTYPE_NORMAL
 	db 25, HAUNTER
 	db -1 ; end
@@ -3677,7 +3724,7 @@ PokefanMGroup:
 	db -1 ; end
 
 KimonoGirlGroup:
-	; KIMONO_GIRL (1) not sure about this one?
+	; KIMONO_GIRL (1) unused
 	db "NAOKO@", TRAINERTYPE_NORMAL
 	db 20, SKIPLOOM
 	db 20, VULPIX
