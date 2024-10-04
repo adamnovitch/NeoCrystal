@@ -3503,84 +3503,128 @@ BoarderGroup:
 
 PokefanMGroup:
 	; POKEFANM (1)
-	db "WILLIAM@", TRAINERTYPE_ITEM
-	db 14, RAICHU,     BERRY
+	; Name:     Pokefan m WILLIAM
+	; Location: National Park
+	; Lore:     
+	db "WILLIAM@", TRAINERTYPE_ITEM_MOVES
+	db 15, RAICHU,     BERRY, THUNDERSHOCK, THUNDERWAVE, QUICK_ATTACK, GROWL
 	db -1 ; end
 
 	; POKEFANM (2)
+	; Name:     Pokefan m Derek
+	; Location: Route 39
+	; Lore:     
 	db "DEREK@", TRAINERTYPE_ITEM
-	db 17, PIKACHU,    BERRY
+	db 20, PIKACHU,    BERRY
 	db -1 ; end
 
 	; POKEFANM (3)
+	; Name:     Pokefan m Robert
+	; Location: Route 10
+	; Lore:     
 	db "ROBERT@", TRAINERTYPE_ITEM
-	db 33, QUAGSIRE,   BERRY
+	db 55, QUAGSIRE,   GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (4)
-	db "JOSHUA@", TRAINERTYPE_ITEM
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
+	; Name:     Pokefan m Trueman
+	; Location: Route 13
+	; Lore:     
+	db "TRUEMAN@", TRAINERTYPE_ITEM
+	db 60, PIKACHU,    GOLD_BERRY
+	db 60, PIKACHU,    GOLD_BERRY
+	db 60, PIKACHU,    GOLD_BERRY
+	db 60, PIKACHU,    GOLD_BERRY
+	db 60, PIKACHU,    LEFTOVERS
+	db 60, PIKACHU,    MAGNET
 	db -1 ; end
 
 	; POKEFANM (5)
+	; Name:     Pokefan m CARTER
+	; Location: Route 14
+	; Lore:     
 	db "CARTER@", TRAINERTYPE_ITEM
-	db 29, BULBASAUR,  BERRY
-	db 29, CHARMANDER, BERRY
-	db 29, SQUIRTLE,   BERRY
+	db 55, VENUSAUR,  GOLD_BERRY
+	db 55, CHARIZARD, GOLD_BERRY
+	db 55, BLASTIOSE, GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (6)
+	; Name:     Pokefan m TREVOR
+	; Location: Route 14
+	; Lore:     
 	db "TREVOR@", TRAINERTYPE_ITEM
-	db 33, PSYDUCK,    BERRY
+	db 55, GOLDUCK,  GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (7)
+	; Name:     Pokefan m Brandon
+	; Location: Route 34
+	; Lore:     
 	db "BRANDON@", TRAINERTYPE_ITEM
-	db 13, SNUBBULL,   BERRY
+	db 15, SNUBBULL,   BERRY
 	db -1 ; end
 
 	; POKEFANM (8)
+	; Name:     Pokefan m JEREMY
+	; Location: S.S. Aqua
+	; Lore:     
 	db "JEREMY@", TRAINERTYPE_ITEM
-	db 28, MEOWTH,     BERRY
-	db 28, MEOWTH,     BERRY
-	db 28, MEOWTH,     BERRY
+	db 55, MEOWTH,     GOLD_BERRY
+	db 55, MEOWTH,     GOLD_BERRY
+	db 55, MEOWTH,     GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (9)
+	; Name:     Pokefan m COLIN
+	; Location: S.S. Aqua
+	; Lore:     
 	db "COLIN@", TRAINERTYPE_ITEM
-	db 32, DELIBIRD,   BERRY
+	db 55, DELIBIRD,   BERRY
 	db -1 ; end
 
 	; POKEFANM (10)
+	; Name:     Pokefan m Derek
+	; Location: Route 39
+	; Lore:     (Rage)
 	db "DEREK@", TRAINERTYPE_ITEM
-	db 19, PIKACHU,    BERRY
+	db 30, RAICHU,    BERRY
 	db -1 ; end
 
 	; POKEFANM (11)
+	; Name:     Pokefan m Derek
+	; Location: Route 39
+	; Lore:     (champion)
 	db "DEREK@", TRAINERTYPE_ITEM
-	db 36, PIKACHU,    BERRY
+	db 55, RAICHU,    GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (12)
+	; Name:     Pokefan m Alex
+	; Location: Route 13
+	; Lore:     
 	db "ALEX@", TRAINERTYPE_ITEM
-	db 29, NIDOKING,   BERRY
-	db 29, SLOWKING,   BERRY
-	db 29, SEAKING,    BERRY
+	db 55, NIDOKING,   GOLD_BERRY
+	db 55, SLOWKING,   GOLD_BERRY
+	db 55, SEAKING,    GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (13)
+	; Name:     Pokefan m Rex
+	; Location: Route 6
+	; Lore:     
 	db "REX@", TRAINERTYPE_ITEM
-	db 35, PHANPY,     BERRY
+	db 55, DONPHAN,    GOLD_BERRY
+	db 55, PILOSWINE,  GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (14)
+	; Name:     Pokefan m Allan
+	; Location: Route 6
+	; Lore:     
 	db "ALLAN@", TRAINERTYPE_ITEM
-	db 35, TEDDIURSA,  BERRY
+	db 55, URSARING,  GOLD_BERRY
+	db 55, SNORLAX,   GOLD_BERRY
 	db -1 ; end
 
 KimonoGirlGroup:
@@ -3620,7 +3664,7 @@ KimonoGirlGroup:
 	; Location: Ecruteak City
 	; Lore:     
 	db "KUNI@", TRAINERTYPE_MOVES
-	db 20, VAPOREON, SWIFT, BUBBLEBEAM, AURORABEAM, MEDITATE
+	db 20, VAPOREON, SWIFT, BUBBLEBEAM, AURORA_BEAM, MEDITATE
 	db -1 ; end
 
 	; KIMONO_GIRL (6)
@@ -3737,7 +3781,7 @@ PokefanFGroup:
 	; Lore:     
 	db "RUTH@", TRAINERTYPE_ITEM
 	db 25, PIKACHU,    BERRY
-	db 25, MARRILL,    BERRY
+	db 25, MARILL,     BERRY
 	db -1 ; end
 
 	; POKEFANF (3)
@@ -3835,7 +3879,7 @@ GruntFGroup:
 	; Lore:     TEAM ROCKET ANIME
 	db "JESSIE@", TRAINERTYPE_MOVES
 	db 36, LICKITUNG,   BIND, STOMP, SLAM, LICK
-	db 36, WOBBUFET,    COUNTER, MIRROR_COAT, SAFEGUARD, DESTINY_BOND
+	db 36, WOBBUFFET,    COUNTER, MIRROR_COAT, SAFEGUARD, DESTINY_BOND
 	db 36, BLISSEY,     LIGHT_SCREEN, REFLECT, RECOVER, SWIFT
 	db 36, YANMA,       WING_ATTACK, QUICK_ATTACK, ANCIENTPOWER, STEEL_WING
 	db 38, ARBOK,       TOXIC, HEADBUTT, SLUDGE_BOMB, DIG
@@ -3878,6 +3922,6 @@ MysticalmanGroup:
 	db 30, MISDREAVUS, NIGHT_SHADE, PSYBEAM, SUPERSONIC, HIDDEN_POWER
 	db 30, MURKROW,    NIGHT_SHADE, AIR_CUTTER, FAINT_ATTACK, HIDDEN_POWER
 	db 30, MR__MIME,   PSYBEAM, REFLECT, HIDDEN_POWER, LIGHT_SCREEN
-	db 30, NOCTOWL,    AIR_CUTTER, PSYBEAM, HIDDEN_POWER, HYNOSIS
+	db 30, NOCTOWL,    AIR_CUTTER, PSYBEAM, HIDDEN_POWER, HYPNOSIS
 	db 34, UNOWN,      HIDDEN_POWER, CONFUSION, ANCIENTPOWER, SWIFT
 	db -1 ; end
