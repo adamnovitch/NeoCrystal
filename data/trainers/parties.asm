@@ -3441,16 +3441,22 @@ SageGroup:
 
 MediumGroup:
 	; MEDIUM (1)
+	; Name:     Medium Martha
+	; Location: Ecruteak Gym
+	; Lore:     
 	db "MARTHA@", TRAINERTYPE_NORMAL
-	db 18, GASTLY
-	db 20, HAUNTER
-	db 20, GASTLY
+	db 24, GASTLY
+	db 22, HAUNTER
+	db 22, MISDREAVUS
 	db -1 ; end
 
 	; MEDIUM (2)
+	; Name:     Medium Grace
+	; Location: Ecruteak Gym
+	; Lore:     
 	db "GRACE@", TRAINERTYPE_NORMAL
-	db 20, HAUNTER
-	db 20, HAUNTER
+	db 22, HAUNTER
+	db 22, HAUNTER
 	db -1 ; end
 
 	; MEDIUM (3)
@@ -3469,15 +3475,21 @@ MediumGroup:
 	db -1 ; end
 
 	; MEDIUM (6)
+	; Name:     Medium Rebecca
+	; Location: Saffron Gym
+	; Lore:     
 	db "REBECCA@", TRAINERTYPE_NORMAL
-	db 35, DROWZEE
-	db 35, HYPNO
+	db 55, HYPNO
+	db 55, STARMIE
 	db -1 ; end
 
 	; MEDIUM (7)
+	; Name:     Medium Doris
+	; Location: Saffron Gym
+	; Lore:     
 	db "DORIS@", TRAINERTYPE_NORMAL
-	db 34, SLOWPOKE
-	db 36, SLOWBRO
+	db 55, SLOWBRO
+	db 55, SLOWKING
 	db -1 ; end
 
 BoarderGroup:
