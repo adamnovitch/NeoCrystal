@@ -416,18 +416,29 @@ TeacherShirleyAfterBattleText:
 	done
 
 SchoolboyNateSeenText:
-	text "Do you know the"
-	line "RUINS OF ALPH?"
+;                        "
+	text "It's BACK O'"
+	line "CLOCK!!!"
 	done
 
 SchoolboyNateBeatenText:
-	text "Yaargh!"
+;                        "
+	text "The real SMACK-"
+	line "DOWN Heal was"
+	cont "the friends we"
+	cont "made along the"
+	cont "way."
 	done
 
 SchoolboyNateAfterBattleText:
-	text "Radios pick up"
-	line "strange signals"
-	cont "inside the RUINS."
+;                        "
+	text "I sure hope you"
+	line "battled NATHAN "
+	cont "at the RUINS OF"
+	cont "ALPH first, or"
+	cont "this would be a"
+	cont "strange contin-"
+	cont "uity error…"
 	done
 
 SchoolboyRickySeenText:

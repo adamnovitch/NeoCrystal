@@ -86,23 +86,16 @@ FisherMartinAfterBattleText:
 	done
 
 FisherStephenSeenText:
-	text "I feel so content,"
-	line "fishing while lis-"
-	cont "tening to some"
-	cont "tunes on my radio."
+	text "It's BACK O'CLOCK!"
 	done
 
 FisherStephenBeatenText:
-	text "My stupid radio"
-	line "distracted me!"
+	text "Buh-BYEEE!"
 	done
 
 FisherStephenAfterBattleText:
-	text "Have you checked"
-	line "out KANTO's radio"
-
-	para "programs? We get a"
-	line "good variety here."
+	text "My disease!"
+	line "Zzzz…"
 	done
 
 FisherBarneySeenText:

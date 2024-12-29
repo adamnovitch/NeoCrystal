@@ -94,21 +94,26 @@ PokefanmAlexAfterBattleText:
 	done
 
 PokefanmJoshuaSeenText:
-	text "Nihihi! Would you"
-	line "like to battle my"
-	cont "PIKACHU gang?"
+	text "Well, well, well…"
+	line "Let's see how you"
+	cont "can handle my"
+	cont "team of 6 PIKACHU…"
+
+	para "Go forth my"
+	line "LEMON SQUAD!"
 	done
 
 PokefanmJoshuaBeatenText:
-	text "PI-PIKACHU!"
+	text "Well, well, well…"
 	done
 
 PokefanmJoshuaAfterBattleText:
-	text "You look like you"
-	line "have many #MON,"
+	text "Perhaps I should"
+	line "consider evolving"
+	cont "all my PIKACHU…"
 
-	para "but PIKACHU is"
-	line "still the best."
+	para "A TANGERINE"
+	line "BATTALION perhaps…"
 	done
 
 BirdKeeperPerrySeenText:

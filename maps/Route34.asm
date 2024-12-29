@@ -536,19 +536,27 @@ YoungsterSamuelAfterText:
 	done
 
 YoungsterIanSeenText:
-	text "I'm the best in my"
-	line "class at #MON."
+;                        "
+	text "Are… Are we"
+	line "back?"
 	done
 
 YoungsterIanBeatenText:
-	text "No! There are bet-"
-	line "ter trainers…"
+;                        "
+	text "…"
+	line "…damnit…"
 	done
 
 YoungsterIanAfterText:
-	text "I'm trying hard so"
-	line "I can be the star"
-	cont "in my class."
+;                        "
+	text "My brother is"
+	line "much better at"
+	line "battling than"
+	line "I am."
+
+	para "Try to find him"
+	line "in the RUINS OF"
+	cont "ALPH!"
 	done
 
 CamperTodd1SeenText:

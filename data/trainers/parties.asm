@@ -10,11 +10,16 @@ Trainers:
 ;    * for TRAINERTYPE_ITEM_MOVES: db level, species, item, 4 moves
 ; - db -1 ; end
 
+; Name:     name
+	; Location: location
+	; Lore:     something relevant to dialogue or station
+
 FalknerGroup:
 	; FALKNER (1)
+	; Theme: Wind
 	db "FALKNER@", TRAINERTYPE_MOVES
-	db 10, HOOTHOOT,   CONFUSION, MUD_SLAP, GUST, GROWL
-	db 12, NATU,       CONFUSION, MUD_SLAP, GUST, LEER
+	db 14, HOOTHOOT,   CONFUSION, MUD_SLAP, GUST, FORESIGHT
+	db 12, NATU,       CONFUSION, MUD_SLAP, PECK, LEER
 	db -1 ; end
 
 WhitneyGroup:
@@ -81,38 +86,38 @@ ClairGroup:
 Rival1Group:
 	; RIVAL1 (1)
 	db "?@", TRAINERTYPE_NORMAL
-	db  7, CHIKORITA
+	db  6, CHIKORITA
 	db -1 ; end
 
 	; RIVAL1 (2)
 	db "?@", TRAINERTYPE_NORMAL
-	db  7, CYNDAQUIL
+	db  6, CYNDAQUIL
 	db -1 ; end
 
 	; RIVAL1 (3)
 	db "?@", TRAINERTYPE_NORMAL
-	db  7, TOTODILE
+	db  6, TOTODILE
 	db -1 ; end
 
 	; RIVAL1 (4)
 	db "?@", TRAINERTYPE_NORMAL
 	db 16, GASTLY
 	db 18, ZUBAT
-	db 21, BAYLEEF
+	db 20, BAYLEEF
 	db -1 ; end
 
 	; RIVAL1 (5)
 	db "?@", TRAINERTYPE_NORMAL
 	db 16, GASTLY
 	db 18, ZUBAT
-	db 21, QUILAVA
+	db 20, QUILAVA
 	db -1 ; end
 
 	; RIVAL1 (6)
 	db "?@", TRAINERTYPE_NORMAL
 	db 16, GASTLY
 	db 18, ZUBAT
-	db 21, CROCONAW
+	db 20, CROCONAW
 	db -1 ; end
 
 	; RIVAL1 (7)
@@ -302,35 +307,50 @@ LtSurgeGroup:
 	db -1 ; end
 
 ScientistGroup:
-	; SCIENTIST (1) ROSS used to work for Silph
+	; SCIENTIST (1)
+	; Name:     SCIENTIST ROSS
+	; Location: ROCKET HQ MAHOGANY
+	; Lore:     Used to work for Silph
 	db "ROSS@", TRAINERTYPE_NORMAL
 	db 32, HAUNTER
 	db 30, KOFFING
 	db 32, PORYGON2
 	db -1 ; end
 
-	; SCIENTIST (2) MITCH doesn't care that pokemon are hurt in experiments
+	; SCIENTIST (2)
+	; Name:     SCIENTIST MITCH
+	; Location: ROCKET HQ MAHOGANY
+	; Lore:     Doesn't care that pokemon are hurt in experiments
 	db "MITCH@", TRAINERTYPE_NORMAL
 	db 30, ARBOK
 	db 30, WEEZING
 	db 30, MUK
 	db -1 ; end
 
-	; SCIENTIST (3) JED says it was a ninja hideout
+	; SCIENTIST (3)
+	; Name:     SCIENTIST JED
+	; Location: ROCKET HQ MAHOGANY
+	; Lore:     This location used to be a ninja hideout
 	db "JED@", TRAINERTYPE_NORMAL
 	db 30, QWILFISH
 	db 30, VENOMOTH
 	db 30, ARIADOS
 	db -1 ; end
 
-	; SCIENTIST (4) MARC is caught unawares
+	; SCIENTIST (4)
+	; Name:     SCIENTIST MARC
+	; Location: RADIO TOWER
+	; Lore:     Caught Unawares!
 	db "MARC@", TRAINERTYPE_NORMAL
 	db 31, ELECTRODE
 	db 33, HOUNDOOM
 	db 32, MAGNETON
 	db -1 ; end
 
-	; SCIENTIST (5) RICH likes Grand Designs by Rush
+	; SCIENTIST (5)
+	; Name:     SCIENTIST RICH
+	; Location: RADIO TOWER
+	; Lore:     tbd
 	db "RICH@", TRAINERTYPE_MOVES
 	db 33, PORYGON,   PSYBEAM, RAIN_DANCE, RECOVER, THUNDER
 	db 33, PORYGON,   PSYBEAM, THUNDERBOLT, RECOVER, SWIFT
@@ -348,29 +368,44 @@ ErikaGroup:
 	db -1 ; end
 
 YoungsterGroup:
-	; YOUNGSTER JOEY (1) ROUTE 30
+	; YOUNGSTER (1)
+	; Name:     YOUNGSTER Joey
+	; Location: Route 30
+	; Lore:     Top Percentage (First Battle)
 	db "JOEY@", TRAINERTYPE_NORMAL
 	db  7, RATTATA
 	db -1 ; end
 
-	; YOUNGSTER MIKEY (2) ROUTE 30
+	; YOUNGSTER (2)
+	; Name:     YOUNGSTER Mikey
+	; Location: Route 30
+	; Lore:     tbd
 	db "MIKEY@", TRAINERTYPE_NORMAL
 	db  5, PIDGEY
 	db  6, RATTATA
 	db -1 ; end
 
-	; YOUNGSTER ALBERT (3) ROUTE 32
+	; YOUNGSTER (3)
+	; Name:     YOUNGSTER ALBERT
+	; Location: Route 32
+	; Lore:     tbd
 	db "ALBERT@", TRAINERTYPE_NORMAL
 	db  7, RATTATA
 	db 10, ZUBAT
 	db -1 ; end
 
-	; YOUNGSTER GORDON (4) ROUTE 32
+	; YOUNGSTER (4)
+	; Name:     YOUNGSTER GORDON
+	; Location: Route 32
+	; Lore:     tbd
 	db "GORDON@", TRAINERTYPE_NORMAL
 	db 10, WOOPER
 	db -1 ; end
 
-	; YOUNGSTER (5) ROUTE 34
+	; YOUNGSTER (5)
+	; Name:     YOUNGSTER SAMUEL
+	; Location: Route 34
+	; Lore:     tbd
 	db "SAMUEL@", TRAINERTYPE_NORMAL
 	db 12, RATTATA
 	db 12, SANDSHREW
@@ -379,61 +414,97 @@ YoungsterGroup:
 	db -1 ; end
 
 	; YOUNGSTER (6)
+	; Name:     YOUNGSTER IAN
+	; Location: Route 34
+	; Lore:     Use Ian's faves
 	db "IAN@", TRAINERTYPE_NORMAL
-	db 10, MANKEY
-	db 12, DIGLETT
+	db 12, LARVITAR
+	db 12, HOUNDOUR
+	db 12, FLAAFFY
 	db -1 ; end
 
-	; YOUNGSTER JOEY (7) ROUTE 30
+	; YOUNGSTER (7)
+	; Name:     YOUNGSTER Joey
+	; Location: Route 30
+	; Lore:     Top Percentage (Goldenrod)
 	db "JOEY@", TRAINERTYPE_NORMAL
 	db 15, RATTATA
 	db -1 ; end
 
-	; YOUNGSTER JOEY (8) ROUTE 30
+	; YOUNGSTER (8)
+	; Name:     YOUNGSTER Joey
+	; Location: Route 30
+	; Lore:     Top Percentage (Olivine)
 	db "JOEY@", TRAINERTYPE_MOVES
 	db 25, RATTATA,   TAIL_WHIP, QUICK_ATTACK, HYPER_FANG, SCARY_FACE
 	db -1 ; end
 
 	; YOUNGSTER (9)
+	; Name:     YOUNGSTER WARREN
+	; Location: Route 3
+	; Lore:     tbd
 	db "WARREN@", TRAINERTYPE_NORMAL
 	db 35, FEAROW
 	db -1 ; end
 
 	; YOUNGSTER (10)
+	; Name:     YOUNGSTER JIMMY
+	; Location: Route 3
+	; Lore:     tbd
 	db "JIMMY@", TRAINERTYPE_NORMAL
 	db 33, RATICATE
 	db 33, ARBOK
 	db -1 ; end
 
 	; YOUNGSTER (11)
+	; Name:     YOUNGSTER OWEN
+	; Location: Route 11
+	; Lore:     tbd
 	db "OWEN@", TRAINERTYPE_NORMAL
 	db 35, GROWLITHE
 	db -1 ; end
 
 	; YOUNGSTER (12)
+	; Name:     YOUNGSTER JASON
+	; Location: Route 11
+	; Lore:     tbd
 	db "JASON@", TRAINERTYPE_NORMAL
 	db 33, SANDSLASH
 	db 33, CROBAT
 	db -1 ; end
 
-	; YOUNGSTER JOEY (13) ROUTE 30
+	; YOUNGSTER (13)
+	; Name:     YOUNGSTER Joey
+	; Location: Route 30
+	; Lore:     Top Percentage (Radio Tower)
 	db "JOEY@", TRAINERTYPE_MOVES
-	db 35, RATTATA,   TAIL_WHIP, QUICK_ATTACK, HYPER_FANG, PURSUIT
+	db 35, RATTATA,   TAIL_WHIP, QUICK_ATTACK, HYPER_FANG, BITE
 	db -1 ; end
 
-	; YOUNGSTER JOEY (14) ROUTE 30
+	; YOUNGSTER (14)
+	; Name:     YOUNGSTER Joey
+	; Location: Route 30
+	; Lore:     Top Percentage (Champion)
+	;           Joey should be ahead of the level curve for just 1
+	;           Rattata, almost comically so.
 	db "JOEY@", TRAINERTYPE_MOVES
-	db 40, RATTATA,   HYPER_BEAM, QUICK_ATTACK, HYPER_FANG, PURSUIT
+	db 99, RATTATA,   GIGA_IMPACT, EXTREMESPEED, CRUNCH, HIDDEN_POWER
 	db -1 ; end
 
 SchoolboyGroup:
 	; SCHOOLBOY (1)
+	; Name:     SCHOOLBOY JACK
+	; Location: National Park (Initial Battle)
+	; Lore:     tbd
 	db "JACK@", TRAINERTYPE_NORMAL
 	db 12, ODDISH
 	db 15, VOLTORB
 	db -1 ; end
 
 	; SCHOOLBOY (2)
+	; Name:     SCHOOLBOY KIPP
+	; Location: Route 15
+	; Lore:     tbd
 	db "KIPP@", TRAINERTYPE_NORMAL
 	db 27, VOLTORB
 	db 27, MAGNEMITE
@@ -442,11 +513,17 @@ SchoolboyGroup:
 	db -1 ; end
 
 	; SCHOOLBOY (3)
+	; Name:     SCHOOLBOY ALAN
+	; Location: Route 36 (Initial Battle)
+	; Lore:     tbd
 	db "ALAN@", TRAINERTYPE_NORMAL
 	db 16, TANGELA
 	db -1 ; end
 
 	; SCHOOLBOY (4)
+	; Name:     SCHOOLBOY JOHNNY
+	; Location: Route 15
+	; Lore:     tbd
 	db "JOHNNY@", TRAINERTYPE_NORMAL
 	db 29, BELLSPROUT
 	db 31, WEEPINBELL
@@ -454,6 +531,9 @@ SchoolboyGroup:
 	db -1 ; end
 
 	; SCHOOLBOY (5)
+	; Name:     SCHOOLBOY DANNY
+	; Location: Route 1
+	; Lore:     tbd
 	db "DANNY@", TRAINERTYPE_NORMAL
 	db 31, JYNX
 	db 31, ELECTABUZZ
@@ -461,23 +541,35 @@ SchoolboyGroup:
 	db -1 ; end
 
 	; SCHOOLBOY (6)
+	; Name:     SCHOOLBOY TOMMY
+	; Location: Route 15
+	; Lore:     tbd
 	db "TOMMY@", TRAINERTYPE_NORMAL
 	db 32, XATU
 	db 34, ALAKAZAM
 	db -1 ; end
 
 	; SCHOOLBOY (7)
+	; Name:     SCHOOLBOY DUDLEY
+	; Location: Route 25
+	; Lore:     tbd
 	db "DUDLEY@", TRAINERTYPE_NORMAL
 	db 35, ODDISH
 	db -1 ; end
 
 	; SCHOOLBOY (8)
+	; Name:     SCHOOLBOY JOE
+	; Location: Route 25
+	; Lore:     tbd
 	db "JOE@", TRAINERTYPE_NORMAL
 	db 33, TANGELA
 	db 33, VAPOREON
 	db -1 ; end
 
 	; SCHOOLBOY (9)
+	; Name:     SCHOOLBOY BILLY
+	; Location: Route 15
+	; Lore:     tbd
 	db "BILLY@", TRAINERTYPE_NORMAL
 	db 27, PARAS
 	db 27, PARAS
@@ -486,41 +578,71 @@ SchoolboyGroup:
 	db -1 ; end
 
 	; SCHOOLBOY (10)
+	; Name:     SCHOOLBOY CHAD
+	; Location: Route 38
+	; Lore:     tbd (Initial Battle)
 	db "CHAD@", TRAINERTYPE_NORMAL
 	db 19, MR__MIME
 	db -1 ; end
 
 	; SCHOOLBOY (11)
+	; Name:     SCHOOLBOY NATE
+	; Location: S.S. Aqua
+	; Lore:     Use Nate's Faves.
 	db "NATE@", TRAINERTYPE_NORMAL
-	db 32, LEDIAN
-	db 32, EXEGGUTOR
+	db 55, DONPHAN
+	db 55, AERODACTYL
+	db 55, KANGASKHAN
+	db 55, SNORLAX
+	db 55, ELECTRODE
+	db 55, KINGLER
+;	db 55, PERSIAN
+;	db 55, STEELIX
+;	db 55, VENUSAUR
+;	db 55, TYPHLOSION
+;	db 55, RHYDON
 	db -1 ; end
 
 	; SCHOOLBOY (12)
+	; Name:     SCHOOLBOY RICKY
+	; Location: S.S. Aqua
+	; Lore:     tbd
 	db "RICKY@", TRAINERTYPE_NORMAL
 	db 32, AIPOM
 	db 32, DITTO
 	db -1 ; end
 
 	; SCHOOLBOY (13)
+	; Name:     SCHOOLBOY JACK
+	; Location: National Park (Olivine)
+	; Lore:     tbd
 	db "JACK@", TRAINERTYPE_NORMAL
 	db 14, ODDISH
 	db 17, VOLTORB
 	db -1 ; end
 
 	; SCHOOLBOY (14)
+	; Name:     SCHOOLBOY JACK
+	; Location: National Park (Radio Tower)
+	; Lore:     tbd
 	db "JACK@", TRAINERTYPE_NORMAL
 	db 28, GLOOM
 	db 31, ELECTRODE
 	db -1 ; end
 
 	; SCHOOLBOY (15)
+	; Name:     SCHOOLBOY ALAN
+	; Location: Route 36 (Olivine)
+	; Lore:     tbd
 	db "ALAN@", TRAINERTYPE_NORMAL
 	db 17, TANGELA
 	db 17, YANMA
 	db -1 ; end
 
 	; SCHOOLBOY (16)
+	; Name:     SCHOOLBOY ALAN
+	; Location: Route 36 (Blackthorn)
+	; Lore:     tbd
 	db "ALAN@", TRAINERTYPE_NORMAL
 	db 20, NATU
 	db 22, TANGELA
@@ -529,18 +651,27 @@ SchoolboyGroup:
 	db -1 ; end
 
 	; SCHOOLBOY (17)
+	; Name:     SCHOOLBOY CHAD
+	; Location: Route 38
+	; Lore:     tbd (Mahogany)
 	db "CHAD@", TRAINERTYPE_NORMAL
 	db 19, MR__MIME
 	db 19, MAGNEMITE
 	db -1 ; end
 
 	; SCHOOLBOY (18)
+	; Name:     SCHOOLBOY CHAD
+	; Location: Route 38
+	; Lore:     tbd (Radio Tower)
 	db "CHAD@", TRAINERTYPE_NORMAL
 	db 27, MR__MIME
 	db 31, MAGNETON
 	db -1 ; end
 
 	; SCHOOLBOY (19)
+	; Name:     SCHOOLBOY JACK
+	; Location: National Park (Champion)
+	; Lore:     tbd
 	db "JACK@", TRAINERTYPE_NORMAL
 	db 30, GLOOM
 	db 33, GROWLITHE
@@ -548,6 +679,9 @@ SchoolboyGroup:
 	db -1 ; end
 
 	; SCHOOLBOY (20)
+	; Name:     SCHOOLBOY JACK
+	; Location: Route 38
+	; Lore:     tbd (Machine Part)
 	db "JACK@", TRAINERTYPE_MOVES
 	db 35, ELECTRODE,  SCREECH, SONICBOOM, ROLLOUT, LIGHT_SCREEN
 	db 35, GROWLITHE,  SUNNY_DAY, LEER, TAKE_DOWN, FLAME_WHEEL
@@ -555,6 +689,9 @@ SchoolboyGroup:
 	db -1 ; end
 
 	; SCHOOLBOY (21)
+	; Name:     SCHOOLBOY ALAN
+	; Location: Route 36 (Champion)
+	; Lore:     tbd
 	db "ALAN@", TRAINERTYPE_NORMAL
 	db 27, NATU
 	db 27, TANGELA
@@ -563,6 +700,9 @@ SchoolboyGroup:
 	db -1 ; end
 
 	; SCHOOLBOY (22)
+	; Name:     SCHOOLBOY ALAN
+	; Location: Route 36 (Machine Part)
+	; Lore:     tbd
 	db "ALAN@", TRAINERTYPE_MOVES
 	db 35, XATU,       PECK, NIGHT_SHADE, SWIFT, FUTURE_SIGHT
 	db 32, TANGELA,    POISONPOWDER, VINE_WHIP, BIND, MEGA_DRAIN
@@ -571,26 +711,38 @@ SchoolboyGroup:
 	db -1 ; end
 
 	; SCHOOLBOY (23)
+	; Name:     SCHOOLBOY CHAD
+	; Location: Route 38
+	; Lore:     tbd (Champion)
 	db "CHAD@", TRAINERTYPE_NORMAL
 	db 30, MR__MIME
 	db 34, MAGNETON
 	db -1 ; end
 
 	; SCHOOLBOY (24)
+	; Name:     SCHOOLBOY CHAD
+	; Location: Route 38
+	; Lore:     tbd (Machine Part)
 	db "CHAD@", TRAINERTYPE_MOVES
 	db 34, MR__MIME,   PSYCHIC_M, LIGHT_SCREEN, REFLECT, ENCORE
 	db 38, MAGNETON,   ZAP_CANNON, THUNDER_WAVE, LOCK_ON, SWIFT
 	db -1 ; end
 
 BirdKeeperGroup:
-	; BIRD_KEEPER (1) VIOLET GYM
+	; BIRD_KEEPER (1)
+	; Name:     BIRD KEEPER ROD
+	; Location: Violet Gym
+	; Lore:
 	db "ROD@", TRAINERTYPE_NORMAL
-	db 8, PIDGEY
+	db 11, PIDGEY
 	db -1 ; end
 
-	; BIRD_KEEPER (2) VIOLET GYM
+	; BIRD_KEEPER (2)
+	; Name:     BIRD KEEPER ABE
+	; Location: Violet Gym
+	; Lore:
 	db "ABE@", TRAINERTYPE_NORMAL
-	db 8, SPEAROW
+	db 11, SPEAROW
 	db -1 ; end
 
 	; BIRD_KEEPER (3)
@@ -658,6 +810,9 @@ BirdKeeperGroup:
 	db -1 ; end
 
 	; BIRD_KEEPER (13)
+	; Name:     Bird Keeper Peter
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "PETER@", TRAINERTYPE_NORMAL
 	db  8, PIDGEY
 	db  9, HOOTHOOT
@@ -1509,10 +1664,14 @@ SabrinaGroup:
 	db -1 ; end
 
 BugCatcherGroup:
-	; BUG_CATCHER DON (1) ROUTE 30
+	; BUG_CATCHER (1)
+	; Name:     BUG CATCHER DON
+	; Location: Route 30
+	; Lore:     tbd
 	db "DON@", TRAINERTYPE_NORMAL
 	db  6, CATERPIE
-	db  6, CATERPIE
+	db  6, WEEDLE
+	db  6, LEDYBA
 	db -1 ; end
 
 	; BUG_CATCHER (2)
@@ -1528,12 +1687,15 @@ BugCatcherGroup:
 	db 30, BEEDRILL
 	db -1 ; end
 
-	; BUG_CATCHER WADE (4) ROUTE 31
+	; BUG_CATCHER (4)
+	; Name:     BUG CATCHER WADE
+	; Location: Route 31
+	; Lore:     tbd (initial)
 	db "WADE@", TRAINERTYPE_NORMAL
 	db  6, CATERPIE
-	db  6, CATERPIE
 	db  6, WEEDLE
-	db  6, CATERPIE
+	db  6, LEDIAN
+	db  6, SPINARAK
 	db -1 ; end
 
 	; BUG_CATCHER BENNY (5) AZALEA GYM
@@ -1565,20 +1727,28 @@ BugCatcherGroup:
 	db 32, PINSIR
 	db -1 ; end
 
-	; BUG_CATCHER WADE (10) ROUTE 31
+	; BUG_CATCHER (10)
+	; Name:     BUG CATCHER WADE
+	; Location: Route 31
+	; Lore:     tbd (Goldenrod)
 	db "WADE@", TRAINERTYPE_NORMAL
-	db 10, BUTTERFREE
-	db 10, BUTTERFREE
-	db 10, BEEDRILL
-	db 10, BUTTERFREE
+	db 14, SPINARAK
+	db 14, LEDYBA
+	db 17, VENONAT
+	db 20, BEEDRILL
+	db 20, BUTTERFREE
 	db -1 ; end
 
-	; BUG_CATCHER WADE (11) ROUTE 31
+	; BUG_CATCHER (11)
+	; Name:     BUG CATCHER WADE
+	; Location: Route 31
+	; Lore:     tbd (Mahogany)
 	db "WADE@", TRAINERTYPE_NORMAL
-	db 16, BUTTERFREE
-	db 16, BUTTERFREE
-	db 16, BEEDRILL
-	db 16, BUTTERFREE
+	db 29, ARIADOS
+	db 29, LEDIAN
+	db 31, VENOMOTH
+	db 33, BEEDRILL
+	db 33, BUTTERFREE
 	db -1 ; end
 
 	; BUG_CATCHER (12)
@@ -1596,20 +1766,31 @@ BugCatcherGroup:
 	db 28, VENOMOTH,   DISABLE, SUPERSONIC, CONFUSION, LEECH_LIFE
 	db -1 ; end
 
-	; BUG_CATCHER WADE (15) ROUTE 31
-	db "WADE@", TRAINERTYPE_MOVES
-	db 25, BUTTERFREE, CONFUSION, POISONPOWDER, SUPERSONIC, WHIRLWIND
-	db 25, BUTTERFREE, CONFUSION, STUN_SPORE, SUPERSONIC, WHIRLWIND
-	db 25, BEEDRILL,   FURY_ATTACK, FOCUS_ENERGY, TWINEEDLE, RAGE
-	db 25, BUTTERFREE, CONFUSION, SLEEP_POWDER, SUPERSONIC, WHIRLWIND
+	; BUG_CATCHER (15)
+	; Name:     BUG CATCHER WADE
+	; Location: Route 31
+	; Lore:     tbd (Radio Tower)
+	;db "WADE@", TRAINERTYPE_MOVES
+	db "WADE@", TRAINERTYPE_NORMAL
+	db 36, ARIADOS
+	db 36, LEDIAN
+	db 36, VENOMOTH
+	db 36, BEEDRILL
+	db 36, BUTTERFREE
 	db -1 ; end
 
-	; BUG_CATCHER WADE (16) ROUTE 31
-	db "WADE@", TRAINERTYPE_MOVES
-	db 35, BUTTERFREE, CONFUSION, POISONPOWDER, SUPERSONIC, GUST
-	db 35, BUTTERFREE, CONFUSION, STUN_SPORE, SUPERSONIC, GUST
-	db 35, BEEDRILL,   FURY_ATTACK, PURSUIT, TWINEEDLE, DOUBLE_TEAM
-	db 35, BUTTERFREE, PSYBEAM, SLEEP_POWDER, GUST, WHIRLWIND
+	; BUG_CATCHER (16)
+	; Name:     BUG CATCHER WADE
+	; Location: Route 31
+	; Lore:     tbd (Champion)
+	;db "WADE@", TRAINERTYPE_MOVES
+	db "WADE@", TRAINERTYPE_NORMAL
+	db 55, ARIADOS
+	db 55, LEDIAN
+	db 55, VENOMOTH
+	db 55, BEEDRILL
+	db 55, BUTTERFREE
+	db 55, PARASECT
 	db -1 ; end
 
 	; BUG_CATCHER (17)
@@ -1629,7 +1810,10 @@ BugCatcherGroup:
 	db -1 ; end
 
 FisherGroup:
-	; FISHER JUSTIN (1) ROUTE 32
+	; FISHER (1)
+	; Name:     FISHER JUSTIN
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "JUSTIN@", TRAINERTYPE_NORMAL
 	db  9, MAGIKARP
 	db 11, MAGIKARP
@@ -1637,7 +1821,10 @@ FisherGroup:
 	db 15, MAGIKARP
 	db -1 ; end
 
-	; FISHER RALPH (2) ROUTE 32
+	; FISHER (2)
+	; Name:     FISHER RALPH
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "RALPH@", TRAINERTYPE_NORMAL
 	db 10, GOLDEEN
 	db -1 ; end
@@ -1654,7 +1841,10 @@ FisherGroup:
 	db 31, SEAKING
 	db -1 ; end
 
-	; FISHER HENRY (5) ROUTE 32
+	; FISHER (5)
+	; Name:     Fisher Henry
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "HENRY@", TRAINERTYPE_NORMAL
 	db  9, POLIWAG
 	db  9, POLIWAG
@@ -1714,11 +1904,16 @@ FisherGroup:
 	db -1 ; end
 
 	; FISHER (14)
-	db "STEPHEN@", TRAINERTYPE_NORMAL
-	db 25, MAGIKARP
-	db 25, MAGIKARP
-	db 31, QWILFISH
-	db 31, TENTACRUEL
+	; Name:     Fisher Rusty
+	; Location: ROUTE 12
+	; Lore:     Use Rusty's Faves.
+	db "RUSTY@", TRAINERTYPE_NORMAL
+	db 55, HITMONLEE
+	db 55, TANGELA
+	db 55, SHUCKLE
+	db 55, AMPHAROS
+	db 55, TOGETIC
+	db 55, DRAGONITE
 	db -1 ; end
 
 	; FISHER (15)
@@ -1728,12 +1923,18 @@ FisherGroup:
 	db 30, GYARADOS
 	db -1 ; end
 
-	; FISHER RALPH (16) ROUTE 32
+	; FISHER (16)
+	; Name:     FISHER RALPH
+	; Location: ROUTE 32
+	; Lore:     tbd (Ecruteak)
 	db "RALPH@", TRAINERTYPE_NORMAL
 	db 17, GOLDEEN
 	db -1 ; end
 
-	; FISHER RALPH (17) ROUTE 32
+	; FISHER (17)
+	; Name:     FISHER RALPH
+	; Location: ROUTE 32
+	; Lore:     tbd (Lake of Rage)
 	db "RALPH@", TRAINERTYPE_NORMAL
 	db 17, QWILFISH
 	db 19, GOLDEEN
@@ -1772,13 +1973,19 @@ FisherGroup:
 	db 38, REMORAID,   PSYBEAM, AURORA_BEAM, BUBBLEBEAM, HYPER_BEAM
 	db -1 ; end
 
-	; FISHER RALPH (23) ROUTE 32
+	; FISHER (23)
+	; Name:     FISHER RALPH
+	; Location: ROUTE 32
+	; Lore:     tbd (Champion)
 	db "RALPH@", TRAINERTYPE_NORMAL
 	db 30, QWILFISH
 	db 32, GOLDEEN
 	db -1 ; end
 
-	; FISHER RALPH (24) ROUTE 32
+	; FISHER (24)
+	; Name:     FISHER RALPH
+	; Location: ROUTE 32
+	; Lore:     tbd (Machine Part)
 	db "RALPH@", TRAINERTYPE_MOVES
 	db 35, QWILFISH,   TOXIC, MINIMIZE, SURF, PIN_MISSILE
 	db 39, SEAKING,    ENDURE, FLAIL, FURY_ATTACK, WATERFALL
@@ -2551,9 +2758,12 @@ FirebreatherGroup:
 	db -1 ; end
 
 	; FIREBREATHER (6)
+	; Name:     FIREBREATHER WALT
+	; Location: Route 35
+	; Lore:     tbd
 	db "WALT@", TRAINERTYPE_NORMAL
-	db 11, MAGMAR
-	db 13, MAGMAR
+	db 16, MAGBY
+	db 16, MAGMAR
 	db -1 ; end
 
 	; FIREBREATHER RAY (7) UNION 1F
@@ -2570,11 +2780,14 @@ FirebreatherGroup:
 
 JugglerGroup:
 	; JUGGLER (1)
+	; Name:     JUGGLER IRWIN
+	; Location: Route 35
+	; Lore:     tbd
 	db "IRWIN@", TRAINERTYPE_NORMAL
-	db  2, VOLTORB
-	db  6, VOLTORB
 	db 10, VOLTORB
+	db 12, VOLTORB
 	db 14, VOLTORB
+	db 16, VOLTORB
 	db -1 ; end
 
 	; JUGGLER (2)
@@ -2706,8 +2919,16 @@ ExecutiveMGroup:
 
 PsychicGroup:
 	; PSYCHIC_T (1)
+	; Name:     Psychic Nathan
+	; Location: Ruins of Alph
+	; Lore:     Use Nate's Faves.
 	db "NATHAN@", TRAINERTYPE_NORMAL
-	db 26, GIRAFARIG
+	db 26, PHANPY
+	db 26, MEOWTH
+	db 26, ONIX
+	db 26, BULBASAUR
+	db 26, HOUNDOOM
+	db 26, RHYHORN
 	db -1 ; end
 
 	; PSYCHIC_T (2)
@@ -2777,7 +2998,10 @@ PsychicGroup:
 	db -1 ; end
 
 PicnickerGroup:
-	; PICNICKER LIZ (1) ROUTE 32
+	; PICNICKER (1)
+	; Name:     PICNICKER LIZ
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db 10, NIDORAN_F
 	db -1 ; end
@@ -2790,13 +3014,19 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (3)
+	; Name:     PICKNICKER BROOKE
+	; Location: Route 35
+	; Lore:     tbd
 	db "BROOKE@", TRAINERTYPE_MOVES
-	db 16, PIKACHU,    THUNDERSHOCK, GROWL, QUICK_ATTACK, DOUBLE_TEAM
+	db 17, PIKACHU,    THUNDERSHOCK, GROWL, QUICK_ATTACK, DOUBLE_TEAM
 	db -1 ; end
 
 	; PICNICKER (4)
+	; Name:     PICKNICKER KIM
+	; Location: Route 35
+	; Lore:     tbd
 	db "KIM@", TRAINERTYPE_NORMAL
-	db 15, VULPIX
+	db 17, VULPIX
 	db -1 ; end
 
 	; PICNICKER (5)
@@ -2833,13 +3063,19 @@ PicnickerGroup:
 	db 16, PONYTA
 	db -1 ; end
 
-	; PICNICKER LIZ (11) ROUTE 32
+	; PICNICKER (11)
+	; Name:     PICNICKER LIZ
+	; Location: ROUTE 32
+	; Lore:     tbd (Ecruteak)
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db 15, WEEPINBELL
 	db 15, NIDORINA
 	db -1 ; end
 
-	; PICNICKER LIZ (12) ROUTE 32
+	; PICNICKER (12)
+	; Name:     PICNICKER Liz
+	; Location: ROUTE 32
+	; Lore:     tbd (Mahogany)
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db 19, WEEPINBELL
 	db 19, NIDORINO
@@ -2866,13 +3102,19 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (16)
-	db "TIFFANY@", TRAINERTYPE_MOVES
-	db 31, CLEFAIRY,   ENCORE, SING, DOUBLESLAP, MINIMIZE
+	; Name:     PICNICKER TIFFANY
+	; Location: ROUTE 43
+	; Lore:     (radio)
+	db "TIFFANY@", TRAINERTYPE_NORMAL
+	db 35, CLEFABLE
 	db -1 ; end
 
 	; PICNICKER (17)
-	db "TIFFANY@", TRAINERTYPE_MOVES
-	db 37, CLEFAIRY,   ENCORE, DOUBLESLAP, MINIMIZE, METRONOME
+	; Name:     PICNICKER TIFFANY
+	; Location: ROUTE 43
+	; Lore:     (champion)
+	db "TIFFANY@", TRAINERTYPE_NORMAL
+	db 55, CLEFABLE
 	db -1 ; end
 
 	; PICNICKER (18)
@@ -2887,8 +3129,11 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (20)
+	; Name:     PICNICKER TIFFANY
+	; Location: ROUTE 43
+	; Lore:     (first)
 	db "TIFFANY@", TRAINERTYPE_MOVES
-	db 20, CLEFAIRY,   ENCORE, SING, DOUBLESLAP, MINIMIZE
+	db 24, CLEFAIRY,   ENCORE, SING, DOUBLESLAP, MINIMIZE
 	db -1 ; end
 
 	; PICNICKER (21)
@@ -2898,14 +3143,20 @@ PicnickerGroup:
 	db 36, PONYTA,     DOUBLE_TEAM, STOMP, FIRE_SPIN, SUNNY_DAY
 	db -1 ; end
 
-	; PICNICKER LIZ (22) ROUTE 32
+	; PICNICKER (22)
+	; Name:     PICNICKER Liz
+	; Location: ROUTE 32
+	; Lore:     tbd (Radio Tower)
 	db "LIZ@", TRAINERTYPE_NORMAL
 	db 24, WEEPINBELL
 	db 26, NIDORINO
 	db 26, NIDOQUEEN
 	db -1 ; end
 
-	; PICNICKER LIZ (23) ROUTE 32
+	; PICNICKER (23)
+	; Name:     PICNICKER Liz
+	; Location: ROUTE 32
+	; Lore:     tbd (Champion)
 	db "LIZ@", TRAINERTYPE_MOVES
 	db 30, WEEPINBELL, SLEEP_POWDER, POISONPOWDER, STUN_SPORE, SLUDGE_BOMB
 	db 32, NIDOKING,   EARTHQUAKE, DOUBLE_KICK, POISON_STING, IRON_TAIL
@@ -2927,87 +3178,129 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (26)
+	; Name:     PICNICKER TIFFANY
+	; Location: ROUTE 43
+	; Lore:     (machine part)
 	db "TIFFANY@", TRAINERTYPE_MOVES
-	db 43, CLEFAIRY,   METRONOME, ENCORE, MOONLIGHT, MINIMIZE
+	db 60, CLEFABLE,   MOONBLAST, MOONLIGHT, FIRE_BLAST, PSYCHIC_M
 	db -1 ; end
 
 CamperGroup:
-	; CAMPER ROLAND (1) ROUTE 32
+	; CAMPER (1)
+	; Name:     CAMPER ROLAND
+	; Location: ROUTE 32
+	; Lore:     tbd
 	db "ROLAND@", TRAINERTYPE_NORMAL
 	db 10, NIDORAN_M
 	db -1 ; end
 
 	; CAMPER (2)
+	; Name:     Camper Todd
+	; Location: Route 34
+	; Lore:     n/a
 	db "TODD@", TRAINERTYPE_NORMAL
-	db 14, PSYDUCK
+	db 16, PSYDUCK
+	db 16, GEODUDE
 	db -1 ; end
 
 	; CAMPER (3)
+	; Name:     CAMPER IVAN
+	; Location: Route 35
+	; Lore:     tbd
 	db "IVAN@", TRAINERTYPE_NORMAL
-	db 10, DIGLETT
-	db 10, ZUBAT
-	db 14, DIGLETT
+	db 14, WOOPER
+	db 14, ZUBAT
+	db 17, DIGLETT
 	db -1 ; end
 
 	; CAMPER (4)
+	; Name:     CAMPER ELLIOT
+	; Location: Route 35
+	; Lore:     tbd
 	db "ELLIOT@", TRAINERTYPE_NORMAL
-	db 13, SANDSHREW
-	db 15, MARILL
+	db 15, SANDSHREW
+	db 17, MARILL
 	db -1 ; end
 
 	; CAMPER (5)
+	; Name:     Camper Barry
+	; Location: Fuchsia Gym
+	; Lore:     
 	db "BARRY@", TRAINERTYPE_NORMAL
-	db 36, NIDOKING
+	db 55, NIDOKING
+	db 55, NIDOQUEEN
 	db -1 ; end
 
 	; CAMPER (6)
+	; Name:     Camper Lloyd
+	; Location: Route 25
+	; Lore:     
 	db "LLOYD@", TRAINERTYPE_NORMAL
-	db 34, NIDOKING
+	db 55, RHYDON
+	db 55, NIDOKING
 	db -1 ; end
 
 	; CAMPER (7)
+	; Name:     Camper Dean
+	; Location: Route 9
+	; Lore:     
 	db "DEAN@", TRAINERTYPE_NORMAL
-	db 33, GOLDUCK
-	db 31, SANDSLASH
+	db 55, GOLDUCK
+	db 55, SANDSLASH
+	db 55, TANGELA
 	db -1 ; end
 
 	; CAMPER (8)
+	; Name:     Camper Sid
+	; Location: Route 9
+	; Lore:     
 	db "SID@", TRAINERTYPE_NORMAL
-	db 32, DUGTRIO
-	db 29, PRIMEAPE
-	db 29, POLIWRATH
+	db 55, DUGTRIO
+	db 55, PRIMEAPE
+	db 55, POLIWRATH
 	db -1 ; end
 
-	; CAMPER (9)
+	; CAMPER (9) unused
 	db "HARVEY@", TRAINERTYPE_NORMAL
 	db 15, NIDORINO
 	db -1 ; end
 
-	; CAMPER (10)
+	; CAMPER (10) unused
 	db "DALE@", TRAINERTYPE_NORMAL
 	db 15, NIDORINO
 	db -1 ; end
 
 	; CAMPER (11)
+	; Name:     Camper Ted
+	; Location: Route 46
+	; Lore:     (after gym 3 presumably)
 	db "TED@", TRAINERTYPE_NORMAL
-	db 17, MANKEY
+	db 25, MANKEY
 	db -1 ; end
 
 	; CAMPER (12)
+	; Name:     Camper Todd
+	; Location: Route 34
+	; Lore:     (cianwood)
 	db "TODD@", TRAINERTYPE_NORMAL
-	db 17, GEODUDE
-	db 17, GEODUDE
-	db 23, PSYDUCK
+	db 25, PSYDUCK
+	db 25, SLUGMA
+	db 25, MACHOP
+	db 25, GRAVELER
 	db -1 ; end
 
 	; CAMPER (13)
+	; Name:     Camper Todd
+	; Location: Route 34
+	; Lore:     (blackthorn)
 	db "TODD@", TRAINERTYPE_NORMAL
-	db 23, GEODUDE
-	db 23, GEODUDE
-	db 26, PSYDUCK
+	db 30, PSYDUCK
+	db 30, SLUGMA
+	db 30, MACHOKE
+	db 30, GRAVELER
 	db -1 ; end
 
-	; CAMPER (14)
+	; CAMPER (14) unused
 	db "THOMAS@", TRAINERTYPE_NORMAL
 	db 33, GRAVELER
 	db 36, GRAVELER
@@ -3015,7 +3308,7 @@ CamperGroup:
 	db 42, GOLDUCK
 	db -1 ; end
 
-	; CAMPER (15)
+	; CAMPER (15) unused
 	db "LEROY@", TRAINERTYPE_NORMAL
 	db 33, GRAVELER
 	db 36, GRAVELER
@@ -3023,7 +3316,7 @@ CamperGroup:
 	db 42, GOLDUCK
 	db -1 ; end
 
-	; CAMPER (16)
+	; CAMPER (16) unused
 	db "DAVID@", TRAINERTYPE_NORMAL
 	db 33, GRAVELER
 	db 36, GRAVELER
@@ -3031,7 +3324,7 @@ CamperGroup:
 	db 42, GOLDUCK
 	db -1 ; end
 
-	; CAMPER (17)
+	; CAMPER (17) unused
 	db "JOHN@", TRAINERTYPE_NORMAL
 	db 33, GRAVELER
 	db 36, GRAVELER
@@ -3040,279 +3333,410 @@ CamperGroup:
 	db -1 ; end
 
 	; CAMPER (18)
+	; Name:     Camper Jerry
+	; Location: Pewter Gym
+	; Lore:     Was there in RBY too
 	db "JERRY@", TRAINERTYPE_NORMAL
-	db 37, SANDSLASH
+	db 55, DUGTRIO
+	db 55, SANDSLASH
+	db 55, RHYDON
 	db -1 ; end
 
 	; CAMPER (19)
+	; Name:     Camper Spencer
+	; Location: Route 43
+	; Lore:     n/a
 	db "SPENCER@", TRAINERTYPE_NORMAL
-	db 17, SANDSHREW
-	db 17, SANDSLASH
-	db 19, ZUBAT
+	db 30, SANDSLASH
+	db 30, AZUMARILL
+	db 30, GOLBAT
 	db -1 ; end
 
 	; CAMPER (20)
+	; Name:     Camper Todd
+	; Location: Route 34
+	; Lore:     (champion)
 	db "TODD@", TRAINERTYPE_NORMAL
-	db 30, GRAVELER
-	db 30, GRAVELER
-	db 30, SLUGMA
-	db 32, PSYDUCK
+	db 55, MAGCARGO
+	db 55, GOLDUCK
+	db 55, MACHAMP
+	db 55, GOLEM
 	db -1 ; end
 
 	; CAMPER (21)
+	; Name:     Camper Todd
+	; Location: Route 34
+	; Lore:     (machine part)
 	db "TODD@", TRAINERTYPE_MOVES
-	db 33, GRAVELER,   SELFDESTRUCT, ROCK_THROW, HARDEN, MAGNITUDE
-	db 33, GRAVELER,   SELFDESTRUCT, ROCK_THROW, HARDEN, MAGNITUDE
-	db 36, MAGCARGO,   ROCK_THROW, HARDEN, AMNESIA, FLAMETHROWER
-	db 34, GOLDUCK,    DISABLE, PSYCHIC_M, SURF, PSYCH_UP
+	db 60, MAGCARGO,   RECOVER, FIRE_BLAST, ROCK_SLIDE, BODY_SLAM
+	db 60, GOLDUCK,    PSYCHIC_M, SURF, MEDITATE, AMNESIA
+	db 60, MACHAMP,    CROSS_CHOP, MEDITATE, SWORDS_DANCE, DOUBLE_EDGE
+	db 60, GOLEM,      EARTHQUAKE, ROCK_SLIDE, SLAM, WITHDRAW
 	db -1 ; end
 
 	; CAMPER (22)
+	; Name:     Camper Quentin
+	; Location: Route 45
+	; Lore:     n/a
 	db "QUENTIN@", TRAINERTYPE_NORMAL
-	db 30, FEAROW
-	db 30, PRIMEAPE
-	db 30, TAUROS
+	db 38, FEAROW
+	db 38, PRIMEAPE
+	db 38, TAUROS
 	db -1 ; end
 
 ExecutiveFGroup:
 	; EXECUTIVEF (1)
-	db "EXECUTIVE@", TRAINERTYPE_MOVES
-	db 32, ARBOK,      WRAP, POISON_STING, BITE, GLARE
-	db 32, VILEPLUME,  ABSORB, SWEET_SCENT, SLEEP_POWDER, ACID
-	db 32, MURKROW,    PECK, PURSUIT, HAZE, NIGHT_SHADE
+	; Name:     Executive Ariana
+	; Location: Hideout
+	; Lore:     SILVER'S MOM HAS GOT IT GOING ON
+	db "ARIANA@", TRAINERTYPE_ITEM_MOVES
+	db 35, ARBOK,      GOLD_BERRY, SLUDGE, CONSTRICT, GLARE, BITE
+	db 35, VILEPLUME,  GOLD_BERRY, GIGA_DRAIN, TOXIC, ACID, HIDDEN_POWER
+	db 35, MURKROW,    GOLD_BERRY, FAINT_ATTACK, AIR_CUTTER, NIGHT_SHADE, ICY_WIND
+	db 35, HYPNO,      GOLD_BERRY, CONFUSE_RAY, HEADBUTT, PSYBEAM, THUNDERPUNCH
+	db 35, MUK,        GOLD_BERRY, SLUDGE, BODY_SLAM, FLAMETHROWER, MUD_SLAP
 	db -1 ; end
 
 	; EXECUTIVEF (2)
-	db "EXECUTIVE@", TRAINERTYPE_MOVES
-	db 23, ARBOK,      WRAP, LEER, POISON_STING, BITE
-	db 23, GLOOM,      ABSORB, SWEET_SCENT, SLEEP_POWDER, ACID
-	db 25, MURKROW,    PECK, PURSUIT, HAZE, NO_MOVE
+	; Name:     Executive Ariana
+	; Location: Radio Tower
+	; Lore:     SILVER'S MOM HAS GOT IT GOING ON
+	db "ARIANA@", TRAINERTYPE_ITEM_MOVES
+	db 30, ARBOK,      GOLD_BERRY, SLUDGE, CONSTRICT, GLARE, BITE
+	db 30, VILEPLUME,  GOLD_BERRY, GIGA_DRAIN, TOXIC, ACID, HIDDEN_POWER
+	db 30, MURKROW,    GOLD_BERRY, FAINT_ATTACK, AIR_CUTTER, NIGHT_SHADE, ICY_WIND
+	db 30, HYPNO,      GOLD_BERRY, CONFUSE_RAY, HEADBUTT, PSYBEAM, THUNDERPUNCH
+	db 30, MUK,        GOLD_BERRY, SLUDGE, BODY_SLAM, FLAMETHROWER, MUD_SLAP
 	db -1 ; end
 
 SageGroup:
-	; SAGE (1) SPROUT TOWER
+	; SAGE (1)
+	; Name:     SAGE CHOW
+	; Location: Sprout Tower
+	; Lore:     n/a
 	db "CHOW@", TRAINERTYPE_NORMAL
-	db  6, BELLSPROUT
-	db  6, BELLSPROUT
-	db  6, BELLSPROUT
-	db -1 ; end
-
-	; SAGE (2) SPROUT TOWER
-	db "NICO@", TRAINERTYPE_NORMAL
-	db  6, BELLSPROUT
-	db  6, BELLSPROUT
-	db  6, BELLSPROUT
-	db -1 ; end
-
-	; SAGE (3) SPROUT TOWER
-	db "JIN@", TRAINERTYPE_NORMAL
+	db  8, BELLSPROUT
+	db  8, BELLSPROUT
 	db  8, BELLSPROUT
 	db -1 ; end
 
-	; SAGE (4) SPROUT TOWER
+	; SAGE (2)
+	; Name:     SAGE NICO
+	; Location: Sprout Tower
+	; Lore:     n/a
+	db "NICO@", TRAINERTYPE_NORMAL
+	db  8, BELLSPROUT
+	db  8, BELLSPROUT
+	db  8, BELLSPROUT
+	db -1 ; end
+
+	; SAGE (3)
+	; Name:     SAGE JIN
+	; Location: Sprout Tower
+	; Lore:     n/a
+	db "JIN@", TRAINERTYPE_NORMAL
+	db 10, BELLSPROUT
+	db -1 ; end
+
+	; SAGE (4)
+	; Name:     SAGE TROY
+	; Location: Sprout Tower
+	; Lore:     n/a
 	db "TROY@", TRAINERTYPE_NORMAL
-	db  7, BELLSPROUT
-	db  7, RATTATA
+	db  9, BELLSPROUT
+	db  9, RATTATA
 	db -1 ; end
 
 	; SAGE (5)
+	; Name:     SAGE Jeffrey
+	; Location: Ecruteak Gym
+	; Lore:     n/a
 	db "JEFFREY@", TRAINERTYPE_NORMAL
-	db 22, HAUNTER
+	db 25, HAUNTER
 	db -1 ; end
 
 	; SAGE (6)
+	; Name:     SAGE PING
+	; Location: Ecruteak Gym
+	; Lore:     n/a
 	db "PING@", TRAINERTYPE_NORMAL
-	db 16, GASTLY
-	db 16, GASTLY
-	db 16, GASTLY
-	db 16, GASTLY
-	db 16, GASTLY
+	db 18, GASTLY
+	db 18, GASTLY
+	db 18, GASTLY
+	db 18, MISDREAVUS
+	db 18, HAUNTER
 	db -1 ; end
 
-	; SAGE (7) SPROUT TOWER
+	; SAGE (7)
+	; Name:     SAGE EDMOND
+	; Location: Sprout Tower
+	; Lore:     n/a
 	db "EDMOND@", TRAINERTYPE_NORMAL
-	db  6, BELLSPROUT
-	db  6, BELLSPROUT
-	db  6, BELLSPROUT
+	db  8, BELLSPROUT
+	db  8, BELLSPROUT
+	db  8, BELLSPROUT
 	db -1 ; end
 
-	; SAGE (8) SPROUT TOWER
+	; SAGE (8)
+	; Name:     SAGE NEAL
+	; Location: Sprout Tower
+	; Lore:     n/a
 	db "NEAL@", TRAINERTYPE_NORMAL
-	db  7, BELLSPROUT
-	db  7, GASTLY
+	db  9, BELLSPROUT
+	db  9, GASTLY
 	db -1 ; end
 
-	; SAGE (9) SPROUT TOWER
+	; SAGE (9)
+	; Name:     SAGE LI
+	; Location: Sprout Tower
+	; Lore:     Boss
 	db "LI@", TRAINERTYPE_NORMAL
-	db  8, RATTATA
-	db  8, GASTLY
+	db 10, RATTATA
+	db 10, GASTLY
 	db 10, BELLSPROUT
 	db -1 ; end
 
 	; SAGE (10)
+	; Name:     SAGE GAKU
+	; Location: Tin Tower
+	; Lore:     n/a
 	db "GAKU@", TRAINERTYPE_NORMAL
-	db 32, NOCTOWL
-	db 32, FLAREON
+	db 35, NOCTOWL
+	db 35, XATU
+	db 35, FLAREON
 	db -1 ; end
 
 	; SAGE (11)
+	; Name:     SAGE MASA
+	; Location: Tin Tower
+	; Lore:     n/a
 	db "MASA@", TRAINERTYPE_NORMAL
-	db 32, NOCTOWL
-	db 32, JOLTEON
+	db 35, NOCTOWL
+	db 35, STANTLER
+	db 35, JOLTEON
 	db -1 ; end
 
 	; SAGE (12)
+	; Name:     SAGE KOJI
+	; Location: Tin Tower
+	; Lore:     n/a
 	db "KOJI@", TRAINERTYPE_NORMAL
-	db 32, NOCTOWL
-	db 32, VAPOREON
+	db 35, NOCTOWL
+	db 35, LEDIAN
+	db 35, VAPOREON
 	db -1 ; end
 
 MediumGroup:
 	; MEDIUM (1)
+	; Name:     Medium Martha
+	; Location: Ecruteak Gym
+	; Lore:     
 	db "MARTHA@", TRAINERTYPE_NORMAL
-	db 18, GASTLY
-	db 20, HAUNTER
-	db 20, GASTLY
+	db 24, GASTLY
+	db 22, HAUNTER
+	db 22, MISDREAVUS
 	db -1 ; end
 
 	; MEDIUM (2)
+	; Name:     Medium Grace
+	; Location: Ecruteak Gym
+	; Lore:     
 	db "GRACE@", TRAINERTYPE_NORMAL
-	db 20, HAUNTER
-	db 20, HAUNTER
+	db 22, HAUNTER
+	db 22, HAUNTER
 	db -1 ; end
 
-	; MEDIUM (3)
+	; MEDIUM (3) unused
 	db "BETHANY@", TRAINERTYPE_NORMAL
 	db 25, HAUNTER
 	db -1 ; end
 
-	; MEDIUM (4)
+	; MEDIUM (4) unused
 	db "MARGRET@", TRAINERTYPE_NORMAL
 	db 25, HAUNTER
 	db -1 ; end
 
-	; MEDIUM (5)
+	; MEDIUM (5) unused
 	db "ETHEL@", TRAINERTYPE_NORMAL
 	db 25, HAUNTER
 	db -1 ; end
 
 	; MEDIUM (6)
+	; Name:     Medium Rebecca
+	; Location: Saffron Gym
+	; Lore:     
 	db "REBECCA@", TRAINERTYPE_NORMAL
-	db 35, DROWZEE
-	db 35, HYPNO
+	db 55, HYPNO
+	db 55, STARMIE
 	db -1 ; end
 
 	; MEDIUM (7)
+	; Name:     Medium Doris
+	; Location: Saffron Gym
+	; Lore:     
 	db "DORIS@", TRAINERTYPE_NORMAL
-	db 34, SLOWPOKE
-	db 36, SLOWBRO
+	db 55, SLOWBRO
+	db 55, SLOWKING
 	db -1 ; end
 
 BoarderGroup:
 	; BOARDER (1)
+	; Name:     Boarder Ronald
+	; Location: Mahogany Gym
+	; Lore:     
 	db "RONALD@", TRAINERTYPE_NORMAL
-	db 24, SEEL
-	db 25, DEWGONG
-	db 24, SEEL
+	db 30, DELIBIRD
+	db 28, SWINUB
+	db 26, SNEASEL
 	db -1 ; end
 
 	; BOARDER (2)
+	; Name:     Boarder Brad
+	; Location: Mahogany Gym
+	; Lore:     
 	db "BRAD@", TRAINERTYPE_NORMAL
 	db 26, SWINUB
-	db 26, SWINUB
+	db 29, SWINUB
 	db -1 ; end
 
 	; BOARDER (3)
+	; Name:     Boarder Douglas
+	; Location: Mahogany Gym
+	; Lore:     
 	db "DOUGLAS@", TRAINERTYPE_NORMAL
-	db 24, SHELLDER
-	db 25, CLOYSTER
-	db 24, SHELLDER
+	db 25, SHELLDER
+	db 27, CLOYSTER
+	db 26, SMOOCHUM
 	db -1 ; end
 
 PokefanMGroup:
 	; POKEFANM (1)
-	db "WILLIAM@", TRAINERTYPE_ITEM
-	db 14, RAICHU,     BERRY
+	; Name:     Pokefan m WILLIAM
+	; Location: National Park
+	; Lore:     
+	db "WILLIAM@", TRAINERTYPE_ITEM_MOVES
+	db 15, RAICHU,     BERRY, THUNDERSHOCK, THUNDER_WAVE, QUICK_ATTACK, GROWL
 	db -1 ; end
 
 	; POKEFANM (2)
+	; Name:     Pokefan m Derek
+	; Location: Route 39
+	; Lore:     
 	db "DEREK@", TRAINERTYPE_ITEM
-	db 17, PIKACHU,    BERRY
+	db 20, PIKACHU,    BERRY
 	db -1 ; end
 
 	; POKEFANM (3)
+	; Name:     Pokefan m Robert
+	; Location: Route 10
+	; Lore:     
 	db "ROBERT@", TRAINERTYPE_ITEM
-	db 33, QUAGSIRE,   BERRY
+	db 55, QUAGSIRE,   GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (4)
-	db "JOSHUA@", TRAINERTYPE_ITEM
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
+	; Name:     Pokefan m Trueman
+	; Location: Route 13
+	; Lore:     
+	db "TRUEMAN@", TRAINERTYPE_ITEM
+	db 60, PIKACHU,    GOLD_BERRY
+	db 60, PIKACHU,    GOLD_BERRY
+	db 60, PIKACHU,    GOLD_BERRY
+	db 60, PIKACHU,    GOLD_BERRY
+	db 60, PIKACHU,    LEFTOVERS
+	db 60, PIKACHU,    MAGNET
 	db -1 ; end
 
 	; POKEFANM (5)
+	; Name:     Pokefan m CARTER
+	; Location: Route 14
+	; Lore:     
 	db "CARTER@", TRAINERTYPE_ITEM
-	db 29, BULBASAUR,  BERRY
-	db 29, CHARMANDER, BERRY
-	db 29, SQUIRTLE,   BERRY
+	db 55, VENUSAUR,  GOLD_BERRY
+	db 55, CHARIZARD, GOLD_BERRY
+	db 55, BLASTOISE, GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (6)
+	; Name:     Pokefan m TREVOR
+	; Location: Route 14
+	; Lore:     
 	db "TREVOR@", TRAINERTYPE_ITEM
-	db 33, PSYDUCK,    BERRY
+	db 55, GOLDUCK,  GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (7)
+	; Name:     Pokefan m Brandon
+	; Location: Route 34
+	; Lore:     
 	db "BRANDON@", TRAINERTYPE_ITEM
-	db 13, SNUBBULL,   BERRY
+	db 15, SNUBBULL,   BERRY
 	db -1 ; end
 
 	; POKEFANM (8)
+	; Name:     Pokefan m JEREMY
+	; Location: S.S. Aqua
+	; Lore:     
 	db "JEREMY@", TRAINERTYPE_ITEM
-	db 28, MEOWTH,     BERRY
-	db 28, MEOWTH,     BERRY
-	db 28, MEOWTH,     BERRY
+	db 55, MEOWTH,     GOLD_BERRY
+	db 55, MEOWTH,     GOLD_BERRY
+	db 55, MEOWTH,     GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (9)
+	; Name:     Pokefan m COLIN
+	; Location: S.S. Aqua
+	; Lore:     
 	db "COLIN@", TRAINERTYPE_ITEM
-	db 32, DELIBIRD,   BERRY
+	db 55, DELIBIRD,   BERRY
 	db -1 ; end
 
 	; POKEFANM (10)
+	; Name:     Pokefan m Derek
+	; Location: Route 39
+	; Lore:     (Rage)
 	db "DEREK@", TRAINERTYPE_ITEM
-	db 19, PIKACHU,    BERRY
+	db 30, RAICHU,    BERRY
 	db -1 ; end
 
 	; POKEFANM (11)
+	; Name:     Pokefan m Derek
+	; Location: Route 39
+	; Lore:     (champion)
 	db "DEREK@", TRAINERTYPE_ITEM
-	db 36, PIKACHU,    BERRY
+	db 55, RAICHU,    GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (12)
+	; Name:     Pokefan m Alex
+	; Location: Route 13
+	; Lore:     
 	db "ALEX@", TRAINERTYPE_ITEM
-	db 29, NIDOKING,   BERRY
-	db 29, SLOWKING,   BERRY
-	db 29, SEAKING,    BERRY
+	db 55, NIDOKING,   GOLD_BERRY
+	db 55, SLOWKING,   GOLD_BERRY
+	db 55, SEAKING,    GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (13)
+	; Name:     Pokefan m Rex
+	; Location: Route 6
+	; Lore:     
 	db "REX@", TRAINERTYPE_ITEM
-	db 35, PHANPY,     BERRY
+	db 55, DONPHAN,    GOLD_BERRY
+	db 55, PILOSWINE,  GOLD_BERRY
 	db -1 ; end
 
 	; POKEFANM (14)
+	; Name:     Pokefan m Allan
+	; Location: Route 6
+	; Lore:     
 	db "ALLAN@", TRAINERTYPE_ITEM
-	db 35, TEDDIURSA,  BERRY
+	db 55, URSARING,  GOLD_BERRY
+	db 55, SNORLAX,   GOLD_BERRY
 	db -1 ; end
 
 KimonoGirlGroup:
-	; KIMONO_GIRL (1)
+	; KIMONO_GIRL (1) unused
 	db "NAOKO@", TRAINERTYPE_NORMAL
 	db 20, SKIPLOOM
 	db 20, VULPIX
@@ -3320,196 +3744,292 @@ KimonoGirlGroup:
 	db -1 ; end
 
 	; KIMONO_GIRL (2)
-	db "NAOKO@", TRAINERTYPE_NORMAL
-	db 17, FLAREON
+	; Name:     Kimono Girl Naoko
+	; Location: Ecruteak City
+	; Lore:     
+	db "NAOKO@", TRAINERTYPE_MOVES
+	db 20, FLAREON, QUICK_ATTACK, FLAME_WHEEL, SMOG, LEER
 	db -1 ; end
 
 	; KIMONO_GIRL (3)
-	db "SAYO@", TRAINERTYPE_NORMAL
-	db 17, ESPEON
+	; Name:     Kimono Girl Sayo
+	; Location: Ecruteak City
+	; Lore:     
+	db "SAYO@", TRAINERTYPE_MOVES
+	db 20, ESPEON, SWIFT, PSYBEAM, NIGHT_SHADE, MEDITATE
 	db -1 ; end
 
 	; KIMONO_GIRL (4)
-	db "ZUKI@", TRAINERTYPE_NORMAL
-	db 17, UMBREON
+	; Name:     Kimono Girl Zuki
+	; Location: Ecruteak City
+	; Lore:     
+	db "ZUKI@", TRAINERTYPE_MOVES
+	db 20, UMBREON, QUICK_ATTACK, FAINT_ATTACK, SLUDGE, CONFUSE_RAY
 	db -1 ; end
 
 	; KIMONO_GIRL (5)
-	db "KUNI@", TRAINERTYPE_NORMAL
-	db 17, VAPOREON
+	; Name:     Kimono Girl Kuni
+	; Location: Ecruteak City
+	; Lore:     
+	db "KUNI@", TRAINERTYPE_MOVES
+	db 20, VAPOREON, SWIFT, BUBBLEBEAM, AURORA_BEAM, MEDITATE
 	db -1 ; end
 
 	; KIMONO_GIRL (6)
-	db "MIKI@", TRAINERTYPE_NORMAL
-	db 17, JOLTEON
+	; Name:     Kimono Girl Miki
+	; Location: Ecruteak City
+	; Lore:     
+	db "MIKI@", TRAINERTYPE_MOVES
+	db 20, JOLTEON, QUICK_ATTACK, SPARK, DOUBLE_KICK, SHARPEN
 	db -1 ; end
 
 TwinsGroup:
-	; TWINS AMY & MAY (1) AZALEA GYM
+	; TWINS (1)
 	db "AMY & MAY@", TRAINERTYPE_NORMAL
-	db 11, SPINARAK
-	db 11, LEDYBA
+	; Name:     Twins Amy & May
+	; Location: Azalea Gym
+	; Lore:     
+	db 15, LEDYBA
+	db 15, SPINARAK
 	db -1 ; end
 
 	; TWINS (2)
+	; Name:     Twins Ann & Anne
+	; Location: Route 37
+	; Lore:     
 	db "ANN & ANNE@", TRAINERTYPE_MOVES
-	db 16, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
-	db 16, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
+	db 20, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
+	db 20, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
 	db -1 ; end
 
 	; TWINS (3)
+	; Name:     Twins Ann & Anne
+	; Location: Route 37
+	; Lore:     (the other twin)
 	db "ANN & ANNE@", TRAINERTYPE_MOVES
-	db 16, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
-	db 16, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
+	db 20, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
+	db 20, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
 	db -1 ; end
 
-	; TWINS AMY & MAY (4) AZALEA GYM
+	; TWINS (4)
 	db "AMY & MAY@", TRAINERTYPE_NORMAL
-	db 11, LEDYBA
-	db 11, SPINARAK
+	; Name:     Twins Amy & May
+	; Location: Azalea Gym
+	; Lore:     (other twin)
+	db 15, SPINARAK
+	db 15, LEDYBA
 	db -1 ; end
 
 	; TWINS (5)
 	db "JO & ZOE@", TRAINERTYPE_NORMAL
-	db 35, VICTREEBEL
-	db 35, VILEPLUME
+	; Name:     Twins Jo & Zoe
+	; Location: Azalea Gym
+	; Lore:     
+	db 55, VILEPLUME
+	db 55, VICTREEBEL
 	db -1 ; end
 
 	; TWINS (6)
 	db "JO & ZOE@", TRAINERTYPE_NORMAL
-	db 35, VILEPLUME
-	db 35, VICTREEBEL
+	; Name:     Twins Jo & Zoe
+	; Location: Azalea Gym
+	; Lore:     (other twin)
+	db 55, VILEPLUME
+	db 55, VICTREEBEL
 	db -1 ; end
 
 	; TWINS (7)
 	db "MEG & PEG@", TRAINERTYPE_NORMAL
-	db 31, TEDDIURSA
-	db 31, PHANPY
+	; Name:     Twins Meg & Peg
+	; Location: S.S. Aqua
+	; Lore:     
+	db 55, DONPHAN
+	db 55, URSARING
 	db -1 ; end
 
 	; TWINS (8)
 	db "MEG & PEG@", TRAINERTYPE_NORMAL
-	db 31, PHANPY
-	db 31, TEDDIURSA
+	; Name:     Twins Meg & Peg
+	; Location: S.S. Aqua
+	; Lore:     (other twin)
+	db 55, URSARING
+	db 55, DONPHAN
 	db -1 ; end
 
 	; TWINS (9)
+	; Name:     Twins Lea & Pia
+	; Location: Dragon's Den
+	; Lore:     
 	db "LEA & PIA@", TRAINERTYPE_MOVES
-	db 35, DRATINI,    THUNDER_WAVE, TWISTER, FLAMETHROWER, HEADBUTT
-	db 35, DRATINI,    THUNDER_WAVE, TWISTER, ICE_BEAM, HEADBUTT
+	db 38, DRATINI,    THUNDER_WAVE, DRAGON_RAGE, SKULL_BASH, FLAMETHROWER
+	db 38, DRATINI,    THUNDER_WAVE, TWISTER, ICE_BEAM, SLAM
 	db -1 ; end
 
 	; TWINS (10)
+	; Name:     Twins Lea & Pia
+	; Location: Dragon's Den
+	; Lore:     (other twin)
 	db "LEA & PIA@", TRAINERTYPE_MOVES
-	db 38, DRATINI,    THUNDER_WAVE, TWISTER, ICE_BEAM, HEADBUTT
-	db 38, DRATINI,    THUNDER_WAVE, TWISTER, FLAMETHROWER, HEADBUTT
+	db 38, DRATINI,    THUNDER_WAVE, TWISTER, ICE_BEAM, SLAM
+	db 38, DRATINI,    THUNDER_WAVE, DRAGON_RAGE, SKULL_BASH, FLAMETHROWER
 	db -1 ; end
 
 PokefanFGroup:
 	; POKEFANF (1)
+	; Name:     Pokefan f Beverly
+	; Location: Park
+	; Lore:     
 	db "BEVERLY@", TRAINERTYPE_ITEM
-	db 14, SNUBBULL,   BERRY
+	db 20, SNUBBULL,   BERRY
 	db -1 ; end
 
 	; POKEFANF (2)
+	; Name:     Pokefan f Ruth
+	; Location: ROUTE 39
+	; Lore:     
 	db "RUTH@", TRAINERTYPE_ITEM
-	db 17, PIKACHU,    BERRY
+	db 25, PIKACHU,    BERRY
+	db 25, MARILL,     BERRY
 	db -1 ; end
 
 	; POKEFANF (3)
-	db "BEVERLY@", TRAINERTYPE_ITEM
-	db 18, SNUBBULL,   BERRY
-	db -1 ; end
-
-	; POKEFANF (4)
+	; Name:     Pokefan f Beverly
+	; Location: Park
+	; Lore:     (Mahogany)
 	db "BEVERLY@", TRAINERTYPE_ITEM
 	db 30, GRANBULL,   BERRY
 	db -1 ; end
 
+	; POKEFANF (4)
+	; Name:     Pokefan f Beverly
+	; Location: Park
+	; Lore:     (Radio Tower)
+	db "BEVERLY@", TRAINERTYPE_ITEM
+	db 40, GRANBULL,   BERRY
+	db -1 ; end
+
 	; POKEFANF (5)
+	; Name:     Pokefan f Georgia
+	; Location: S.S. Aqua
+	; Lore:     
 	db "GEORGIA@", TRAINERTYPE_ITEM
-	db 23, SENTRET,    BERRY
-	db 23, SENTRET,    BERRY
-	db 23, SENTRET,    BERRY
-	db 28, FURRET,     BERRY
-	db 23, SENTRET,    BERRY
+	db 55, FURRET,     BERRY
+	db 55, GRANBULL,   BERRY
+	db 55, WIGGLYTUFF, BERRY
+	db 55, CLEFABLE,   BERRY
+	db 55, FURRET,     BERRY
 	db -1 ; end
 
 	; POKEFANF (6)
+	; Name:     Pokefan f Jaime
+	; Location: ROUTE 39
+	; Lore:     
 	db "JAIME@", TRAINERTYPE_ITEM
-	db 16, MEOWTH,     BERRY
+	db 25, MEOWTH,     BERRY
+	db 25, CLEFAIRY,   BERRY
+	db 25, SNUBBULL,   BERRY
 	db -1 ; end
 
 RedGroup:
 	; RED (1)
 	db "RED@", TRAINERTYPE_ITEM_MOVES
-	db 88, PIKACHU,    MAGNET,       LIGHT_SCREEN, IRON_TAIL, THUNDERBOLT, THUNDER_WAVE
-	db 82, ESPEON,     GOLD_BERRY,   MORNING_SUN, REFLECT, ZAP_CANNON, PSYCHIC_M
-	db 82, SNORLAX,    MINT_BERRY,   EARTHQUAKE, SLEEP_TALK, REST, BODY_SLAM
-	db 84, VENUSAUR,   MIRACLE_SEED, SUNNY_DAY, GIGA_DRAIN, SYNTHESIS, SOLARBEAM
-	db 84, CHARIZARD,  CHARCOAL,     FLAMETHROWER, WING_ATTACK, SLASH, DRAGONBREATH
-	db 84, BLASTOISE,  MYSTIC_WATER, RAIN_DANCE, SURF, ICE_BEAM, TOXIC
+	db 100, PIKACHU,    MAGNET,       LIGHT_SCREEN, IRON_TAIL, THUNDERBOLT, THUNDER_WAVE
+	db 100, ESPEON,     GOLD_BERRY,   MORNING_SUN, REFLECT, ZAP_CANNON, PSYCHIC_M
+	db 100, SNORLAX,    MINT_BERRY,   EARTHQUAKE, SLEEP_TALK, REST, BODY_SLAM
+	db 100, VENUSAUR,   MIRACLE_SEED, SUNNY_DAY, GIGA_DRAIN, SYNTHESIS, SOLARBEAM
+	db 100, CHARIZARD,  CHARCOAL,     FLAMETHROWER, WING_ATTACK, SLASH, DRAGONBREATH
+	db 100, BLASTOISE,  MYSTIC_WATER, RAIN_DANCE, SURF, ICE_BEAM, TOXIC
 	db -1 ; end
 
 BlueGroup:
 	; BLUE (1)
 	db "BLUE@", TRAINERTYPE_ITEM_MOVES
-	db 67, PIDGEOT,    GOLD_BERRY,   STEEL_WING, WHIRLWIND, WING_ATTACK, MIRROR_MOVE
-	db 65, ALAKAZAM,   GOLD_BERRY,   RECOVER, FUTURE_SIGHT, PSYCHIC_M, REFLECT
-	db 67, RHYDON,     BITTER_BERRY, THRASH, CRUNCH, ROCK_SLIDE, EARTHQUAKE
-	db 70, LAPRAS,     LEFTOVERS,    BODY_SLAM, BLIZZARD, CONFUSE_RAY, DRAGONBREATH
-	db 70, EXEGGUTOR,  GOLD_BERRY,   SUNNY_DAY, LEECH_SEED, PSYCHIC_M, SOLARBEAM
-	db 70, ARCANINE,   GOLD_BERRY,   DRAGONBREATH, ROAR, FLAMETHROWER, EXTREMESPEED
+	db 75, PIDGEOT,    GOLD_BERRY,   STEEL_WING, WHIRLWIND, WING_ATTACK, MIRROR_MOVE
+	db 75, ALAKAZAM,   GOLD_BERRY,   RECOVER, FUTURE_SIGHT, PSYCHIC_M, REFLECT
+	db 75, RHYDON,     BITTER_BERRY, THRASH, CRUNCH, ROCK_SLIDE, EARTHQUAKE
+	db 78, LAPRAS,     LEFTOVERS,    BODY_SLAM, BLIZZARD, CONFUSE_RAY, DRAGONBREATH
+	db 77, EXEGGUTOR,  GOLD_BERRY,   SUNNY_DAY, LEECH_SEED, PSYCHIC_M, SOLARBEAM
+	db 80, ARCANINE,   GOLD_BERRY,   DRAGONBREATH, ROAR, FLAMETHROWER, EXTREMESPEED
 	db -1 ; end
 
 OfficerGroup:
 	; OFFICER (1)
+	; Name:     Keith
+	; Location: ROUTE 34
+	; Lore:     popo
 	db "KEITH@", TRAINERTYPE_NORMAL
-	db 17, GROWLITHE
+	db 15, GROWLITHE
+	db 15, GROWLITHE
 	db -1 ; end
 
 	; OFFICER (2)
+	; Name:     Dirk
+	; Location: ROUTE 35
+	; Lore:     popo
 	db "DIRK@", TRAINERTYPE_NORMAL
-	db 14, GROWLITHE
-	db 14, GROWLITHE
+	db 18, GROWLITHE
+	db 18, GROWLITHE
 	db -1 ; end
 
 GruntFGroup:
-	; GRUNTF (1) SLOWPOKE WELL 2
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db  9, ZUBAT
-	db 11, EKANS
+	; GRUNTF (1)
+	; Name:     Monica
+	; Location: SLOWPOKE WELL
+	; Lore:     Mambo Number 5 for all GruntFs because lol
+	db "MONICA@", TRAINERTYPE_NORMAL
+	db 12, ZUBAT
+	db 14, EKANS
 	db -1 ; end
 
 	; GRUNTF (2)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 26, ARBOK
+	; Name:     JESSIE
+	; Location: Radio Tower
+	; Lore:     TEAM ROCKET ANIME
+	db "JESSIE@", TRAINERTYPE_MOVES
+	db 36, LICKITUNG,   BIND, STOMP, SLAM, LICK
+	db 36, WOBBUFFET,    COUNTER, MIRROR_COAT, SAFEGUARD, DESTINY_BOND
+	db 36, BLISSEY,     LIGHT_SCREEN, REFLECT, RECOVER, SWIFT
+	db 36, YANMA,       WING_ATTACK, QUICK_ATTACK, ANCIENTPOWER, STEEL_WING
+	db 38, ARBOK,       TOXIC, HEADBUTT, SLUDGE_BOMB, DIG
 	db -1 ; end
 
 	; GRUNTF (3)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 25, GLOOM
-	db 25, GLOOM
+	; Name:     Tina
+	; Location: Goldenrod Underground
+	db "TINA@", TRAINERTYPE_NORMAL
+	db 32, VILEPLUME
+	db 32, VICTREEBEL
 	db -1 ; end
 
 	; GRUNTF (4)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 21, EKANS
-	db 23, ODDISH
-	db 21, EKANS
-	db 24, GLOOM
+	; Name:     Cassidy
+	; Location: Radio Tower
+	; Lore:     TEAM ROCKET ANIME
+	db "CASSIDY@", TRAINERTYPE_NORMAL
+	db 35, RATICATE
+	db 35, HOUNDOUR
+	db 35, TENTACRUEL
+	db 35, GRANBULL
 	db -1 ; end
 
 	; GRUNTF (5)
-	db "GRUNT@", TRAINERTYPE_MOVES
-	db 18, EKANS,      WRAP, LEER, POISON_STING, BITE
-	db 18, GLOOM,      ABSORB, SWEET_SCENT, STUN_SPORE, SLEEP_POWDER
+	; Name:     Rita
+	; Location: Rocket HQ
+	db "RITA@", TRAINERTYPE_NORMAL
+	db 32, ARBOK
+	db 32, VILEPLUME
 	db -1 ; end
 
 MysticalmanGroup:
 	; MYSTICALMAN (1)
+	; Name:     Mystical Man Eusine
+	; Location: CIANWOOD CITY
+	; Lore:     Magic, Arcane, Ghost/Psychic, Hidden Power
 	db "EUSINE@", TRAINERTYPE_MOVES
-	db 23, DROWZEE,    DREAM_EATER, HYPNOSIS, DISABLE, CONFUSION
-	db 23, HAUNTER,    LICK, HYPNOSIS, MEAN_LOOK, CURSE
-	db 25, ELECTRODE,  SCREECH, SONICBOOM, THUNDER, ROLLOUT
+	db 30, HYPNO,      HIDDEN_POWER, LIGHT_SCREEN, DREAM_EATER, HYPNOSIS
+	db 30, MISDREAVUS, NIGHT_SHADE, PSYBEAM, SUPERSONIC, HIDDEN_POWER
+	db 30, MURKROW,    NIGHT_SHADE, AIR_CUTTER, FAINT_ATTACK, HIDDEN_POWER
+	db 30, MR__MIME,   PSYBEAM, REFLECT, HIDDEN_POWER, LIGHT_SCREEN
+	db 30, NOCTOWL,    AIR_CUTTER, PSYBEAM, HIDDEN_POWER, HYPNOSIS
+	db 34, UNOWN,      HIDDEN_POWER, CONFUSION, ANCIENTPOWER, SWIFT
 	db -1 ; end

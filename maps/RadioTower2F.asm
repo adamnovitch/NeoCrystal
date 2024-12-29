@@ -456,8 +456,8 @@ GruntF2SeenText:
 	para "easy to take over"
 	line "this place!"
 
-	para "Come on, keep me"
-	line "amused!"
+	para "Come on, twerp,"
+	line "keep me amused!"
 	done
 
 GruntF2BeatenText:
