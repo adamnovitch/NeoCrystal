@@ -1188,10 +1188,46 @@ PlaceMoveData:
 	hlcoord 12, 12
 	ld de, String_MoveAtk
 	call PlaceString
+; Print Move Category
+;	ld a, [wCurSpecies]
+;	ld b, a
+;	hlcoord 1, 11
+;	push hl
+;	ld a, b
+;	dec a
+;	ld bc, MOVE_LENGTH
+;	ld hl, Moves
+;	call AddNTimes
+;	ld de, wStringBuffer1
+;	ld a, BANK(Moves)
+;	call FarCopyBytes
+;	ld a, [wStringBuffer1 + MOVE_CATEGORY]
+;	pop hl
+;	ld b, a
+;	cp 0
+;.print_PHYS
+;	ld de, String_MoveCatPhysical
+;	call PlaceString
+;	jr .continue_print_move_type
+;.print_SPEC
+;	ld de, String_MoveCatSpecial
+;	call PlaceString
+;	jr .continue_print_move_type
+;.print_STAT
+;	ld de, String_MoveCatStatus
+;	call PlaceString
+;	jr .continue_print_move_type
+;.print_BEST
+;	ld de, String_MoveCatBest
+;	call PlaceString
+;.continue_print_move_type
+; End Move Category	
+; Print Move Type
 	ld a, [wCurSpecies]
 	ld b, a
 	hlcoord 2, 12
 	predef PrintMoveType
+; Print Move Power
 	ld a, [wCurSpecies]
 	dec a
 	ld hl, Moves + MOVE_POWER
@@ -1199,18 +1235,48 @@ PlaceMoveData:
 	call AddNTimes
 	ld a, BANK(Moves)
 	call GetFarByte
-	hlcoord 16, 12
+	hlcoord 12, 12
 	cp 2
-	jr c, .no_power
+	jr nc, .print_power
+	ld de, String_MoveNoPower
+	call PlaceString
+	jr .start_print_acc
+.print_power
 	ld [wTextDecimalByte], a
 	ld de, wTextDecimalByte
 	lb bc, 1, 3
 	call PrintNum
-	jr .description
-
-.no_power
+; Print Move Accuracy
+.start_print_acc
+	ld a, [wCurSpecies]
+	dec a
+	ld hl, Moves + MOVE_ACC
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	hlcoord 16, 12
+	cp 2
+	jr nc, .print_accuracy
 	ld de, String_MoveNoPower
 	call PlaceString
+	jr .description
+.print_accuracy
+	ld [wTextDecimalByte], a
+	ld a, $63
+	ldh [hDividend], a
+	ld a, $9c
+	ldh [hDividend + 1], a
+	ld a, $ff
+	ldh [hDivisor], a
+	ld b, 2
+	call Divide
+	ldh a, [hQuotient]
+	ld de, 0, a
+	lb bc, 1, 3
+	call PrintNum
+; PRINT DESCRIPTION
+	jr .description
 
 .description
 	hlcoord 1, 14
@@ -1227,13 +1293,21 @@ String_MoveType_Bottom:
 ;	db moveTYPE
 ;	db "/└@"
 String_MoveAtk:
-	db "ATK/@"
+	db "   /   @"
 ;	db movePWR
 ;	db "/@"
 String_MoveNoPower:
 	db "---@"
 ;	db moveACC
 ;	db "@"
+String_MoveCatPhysical:
+	db "PHYS@"
+String_MoveCatSpecial:
+	db "SPEC@"
+String_MoveCatStatus:
+	db "STAT@"
+String_MoveCatBest:
+	db "BEST@"
 
 PlaceMoveScreenArrows:
 	call PlaceMoveScreenLeftArrow

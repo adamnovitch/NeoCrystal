@@ -21,3 +21,12 @@ PokedexTypeSearchStrings:
 	db " STEEL  @"
 	db " FAIRY  @"
 	assert_table_length NUM_TYPES
+
+;PokedexMoveCategorySearchStrings:
+;; entries correspond with PokedexMoveCategoryTable (see data/types/search_types.asm)
+;	table_width MOVE_CATEGORY_STRING_LENGTH, PokedexMoveCategorySearchStrings
+;	db "PHYS@"
+;	db "SPEC@"
+;	db "STAT@"
+;	db "BEST@"
+;	assert_table_length NUM_MOVE_CATEGORIES
