@@ -18,6 +18,9 @@ BulbasaurEggMoves:
 	db SKULL_BASH
 	db SAFEGUARD
 	db PETAL_DANCE
+	db BIND
+	db CONSTRICT
+	db SLAM
 	db -1 ; end
 
 CharmanderEggMoves:
@@ -26,6 +29,7 @@ CharmanderEggMoves:
 	db ROCK_SLIDE
 	db BITE
 	db OUTRAGE
+	db THRASH
 	db -1 ; end
 
 SquirtleEggMoves:
@@ -33,6 +37,7 @@ SquirtleEggMoves:
 	db HAZE
 	db MIST
 	db CONFUSION
+	db BITE
 	db FORESIGHT
 	db FLAIL
 	db -1 ; end

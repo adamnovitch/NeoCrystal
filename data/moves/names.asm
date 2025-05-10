@@ -12,7 +12,7 @@ MoveNames::
 	li "SCRATCH"
 	li "AIR CUTTER"
 	li "X-SCISSOR"
-	li "AIR SLASH"
+	li "RAZOR WIND"
 	li "SWORDS DANCE"
 	li "CUT"
 	li "GUST"
